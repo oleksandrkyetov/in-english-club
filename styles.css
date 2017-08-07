@@ -1,7 +1,58 @@
-.project-logos{
+body {
+    color: #666666;
+}
+
+.container-fluid, .row {
+    padding: 0;
+    margin: 0;
+}
+
+.project-logos, .events {
     padding: 10px 10px 10px 10px;
 }
 
-.project-logo {
+.pull-right {
+    float: right;
+}
+
+.pull-text-right {
+    text-align: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-text-left {
+    text-align: left;
+}
+
+.score {
+    font-size: 1.4rem;
+}
+
+.winner {
+    color: #0d47a1;
+}
+
+.team-titles {
+    line-height: 2.0rem;
+}
+
+.team-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.team-members {
+    line-height: 1rem;
+}
+
+.team-member {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.no-padding {
     padding: 0;
 }
