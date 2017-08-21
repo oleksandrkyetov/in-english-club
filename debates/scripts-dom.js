@@ -10,7 +10,7 @@ $(document).ready(function() {
     }), ranking);
 
     $('#ranking').html(Handlebars.compile($('#ranking-template').html())({
-        ranking: _.map(ranking, function(value, key) {
+        ranking: _.sortBy(_.map(ranking, function(value, key) {
             return {
                 name: key,
                 score: {
@@ -28,6 +28,8 @@ $(document).ready(function() {
                     }
                 }
             }
+        }), function(value) {
+            return -1 * value.score.total.original
         })
     }));
 

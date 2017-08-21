@@ -2,104 +2,60 @@
 
 var datas = [
     {
-        date: '2017-06-10',
-        style: 'Australasia',
+        date: '2017-02-18',
+        style: 'British Parliamentary',
+        topic: 'This House claims that home education is better than ordinary school education',
         teams: {
             proposition: {
-                name: 'Proposition',
-                score: {
-                    original: 27,
-                    adjusted: undefined
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 16,
+                        adjusted: undefined
+                    },
+                    members: ['Anastasiya Ivanova', 'Olga Konyakhyna']
                 },
-                members: ['Omar Richardson', 'Georgia Garner', 'Jeremiah Schneider']
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 17,
+                        adjusted: undefined
+                    },
+                    members: ['Pavel Karnaukhov', 'Marina Yukhymets']
+                }
             },
             opposition: {
-                name: 'Opposition',
-                score: {
-                    original: 12,
-                    adjusted: undefined
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 18,
+                        adjusted: undefined
+                    },
+                    members: ['Alexander Moshurovskiy', 'Dmytro Petryk']
                 },
-                members: ['Dianne Cook', 'Sonia Rose', 'Audrey Walton']
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 17,
+                        adjusted: undefined
+                    },
+                    members: ['Dmitry Golivets', 'Anastacia Sooltanova']
+                }
             }
         }
     },
     {
-        date: '2017-06-17',
+        date: '2017-02-25',
         style: 'Australasia',
+        topic: 'This House believes that one night stand is unethical',
         teams: {
             proposition: {
                 name: 'Proposition',
                 score: {
-                    original: 13,
+                    original: 34,
                     adjusted: undefined
                 },
-                members: ['Omar Richardson', 'Angelia Coco', 'Audrey Walton']
-            },
-            opposition: {
-                name: 'Opposition',
-                score: {
-                    original: 22,
-                    adjusted: undefined
-                },
-                members: ['Oden Tinuviel', 'Wilburh Purdie', 'Jeremiah Schneider']
-            }
-        }
-    },
-    {
-        date: '2017-06-24',
-        style: 'Australasia',
-        teams: {
-            proposition: {
-                name: 'Proposition',
-                score: {
-                    original: 53,
-                    adjusted: undefined
-                },
-                members: ['Finley Fachtna', 'Sonia Rose', 'Dianne Cook']
-            },
-            opposition: {
-                name: 'Opposition',
-                score: {
-                    original: 42,
-                    adjusted: undefined
-                },
-                members: ['Iole Paol', 'Primitiva Mani', 'Audrey Walton']
-            }
-        }
-    },
-    {
-        date: '2017-07-01',
-        style: 'Australasia',
-        teams: {
-            proposition: {
-                name: 'Proposition',
-                score: {
-                    original: 17,
-                    adjusted: undefined
-                },
-                members: ['Jeremiah Schneider', 'Iole Paol', 'Primitiva Mani']
-            },
-            opposition: {
-                name: 'Opposition',
-                score: {
-                    original: 28,
-                    adjusted: undefined
-                },
-                members: ['Wilburh Purdie', 'Angelia Coco', 'Oden Tinuviel']
-            }
-        }
-    },
-    {
-        date: '2017-07-08',
-        style: 'Australasia',
-        teams: {
-            proposition: {
-                name: 'Proposition',
-                score: {
-                    original: 26,
-                    adjusted: undefined
-                },
-                members: ['Finley Fachtna', 'Georgia Garner', 'Audrey Walton']
+                members: ['Anastasiya Ivanova', 'Kateryna Zhurkina', 'Alexander Moshurovskiy']
             },
             opposition: {
                 name: 'Opposition',
@@ -107,13 +63,123 @@ var datas = [
                     original: 21,
                     adjusted: undefined
                 },
-                members: ['Dianne Cook', 'Sonia Rose', 'Omar Richardson']
+                members: ['Oxana Ilyashenko', 'Станіслав Шитий', 'Yuriy Prus']
             }
         }
     },
     {
-        date: '2017-07-15',
+        date: '2017-03-04',
+        style: 'British Parliamentary',
+        topic: 'This House believes that tipping should be discouraged',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 21,
+                        adjusted: undefined
+                    },
+                    members: ['Anastasiya Ivanova', 'Alexander Moshurovskiy']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 18,
+                        adjusted: undefined
+                    },
+                    members: ['Oksana Nechiporenko', 'Станіслав Шитий']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 19,
+                        adjusted: undefined
+                    },
+                    members: ['Dmitry Golivets', 'Pavel Karnaukhov']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 23,
+                        adjusted: undefined
+                    },
+                    members: ['Julia Turkevich', 'Dmytro Petryk']
+                }
+            }
+        }
+    },
+    {
+        date: '2017-03-11',
         style: 'Australasia',
+        topic: 'This House believes that prostitution should be legalised',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 44,
+                    adjusted: undefined
+                },
+                members: ['Станіслав Шитий', 'Alexander Moshurovskiy', 'Alina Sergeevna']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 43,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Dmitry Golivets']
+            }
+        }
+    },
+    {
+        date: '2017-03-18',
+        style: 'British Parliamentary',
+        topic: 'This House believes that money defines success',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 22,
+                        adjusted: undefined
+                    },
+                    members: ['Alexander Moshurovskiy', 'Dmytro Petryk']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 24,
+                        adjusted: undefined
+                    },
+                    members: ['Oksana Nechiporenko', 'Oleksii Malashyna']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 16,
+                        adjusted: undefined
+                    },
+                    members: ['Pavel Karnaukhov', 'Alona Malashyna']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 21,
+                        adjusted: undefined
+                    },
+                    members: ['Anastasiya Ivanova', 'Liliya Dmitrieva']
+                }
+            }
+        }
+    },
+    {
+        date: '2017-03-25',
+        style: 'Australasia',
+        topic: 'This House claims that being a woman is more expensive',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -121,78 +187,57 @@ var datas = [
                     original: 33,
                     adjusted: undefined
                 },
-                members: ['Oden Tinuviel', 'Wilburh Purdie', 'Sonia Rose']
+                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Евгения Шиндер']
             },
             opposition: {
                 name: 'Opposition',
                 score: {
-                    original: 18,
+                    original: 37,
                     adjusted: undefined
                 },
-                members: ['Dianne Cook', 'Audrey Walton', 'Iole Paol']
+                members: ['Dmytro Petryk', 'Pavel Karnaukhov', 'Oleksandr Kyetov']
             }
         }
     },
     {
-        date: '2017-07-22',
-        style: 'Australasia',
-        teams: {
-            proposition: {
-                name: 'Proposition',
-                score: {
-                    original: 26,
-                    adjusted: undefined
-                },
-                members: ['Georgia Garner', 'Primitiva Mani', 'Omar Richardson']
-            },
-            opposition: {
-                name: 'Opposition',
-                score: {
-                    original: 27,
-                    adjusted: undefined
-                },
-                members: ['Audrey Walton', 'Angelia Coco', 'Finley Fachtna']
-            }
-        }
-    },
-    {
-        date: '2017-06-03',
+        date: '2017-04-01',
         style: 'British Parliamentary',
+        topic: 'This House believes that April Fools Day is the worst holiday ever',
         teams: {
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
                     score: {
-                        original: 31,
+                        original: 24,
                         adjusted: undefined
                     },
-                    members: ['Omar Richardson', 'Georgia Garner']
+                    members: ['Dmitry Golivets', 'Viktoriia Krykhno']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: {
-                        original: 32,
+                        original: 18,
                         adjusted: undefined
                     },
-                    members: ['Oden Tinuviel', 'Iole Paol']
+                    members: ['Oleksii Malashyna', 'Oksana Nechiporenko']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
                     score: {
-                        original: 38,
+                        original: 22,
                         adjusted: undefined
                     },
-                    members: ['Audrey Walton', 'Wilburh Purdie']
+                    members: ['Pavel Karnaukhov', 'Dmytro Petryk']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: {
-                        original: 29,
+                        original: 0,
                         adjusted: undefined
                     },
-                    members: ['Finley Fachtna', 'Dianne Cook']
+                    members: ['Alona Malashyna', 'Julia Turkevich']
                 }
             }
         }
