@@ -1,21 +1,34 @@
 'use strict';
 
 $(document).ready(function() {
+    var ranking = {};
+    computations.ranking.australasia.compute(_.filter(datas, function(data) {
+        return data.style === 'Australasia'
+    }), ranking);
+    computations.ranking.bp.compute(_.filter(datas, function(data) {
+        return data.style === 'British Parliamentary'
+    }), ranking);
+
     $('#ranking').html(Handlebars.compile($('#ranking-template').html())({
-        // ranking: computations.ranking.combine({
-        //     australasia: computations.ranking.for('australasia')
-        //         .compute(_.filter(datas, function(data) {
-        //             return data.style === 'Australasia'
-        //         })),
-        //     british: computations.ranking.for('british')
-        //         .compute(_.filter(datas, function(data) {
-        //             return data.style === 'British Parliamentary'
-        //         }))
-        // })
-        ranking: computations.ranking.for('australasia')
-            .compute(_.filter(datas, function(data) {
-                return data.style === 'Australasia'
-            }))
+        ranking: _.map(ranking, function(value, key) {
+            return {
+                name: key,
+                score: {
+                    total: {
+                        original: value.total.original,
+                        formatted: numeral(value.total.original * 100).format('0.0')
+                    },
+                    proposition: {
+                        original: value.proposition.original,
+                        formatted: numeral(value.proposition.original * 100).format('0.0')
+                    },
+                    opposition: {
+                        original: value.opposition.original,
+                        formatted: numeral(value.opposition.original * 100).format('0.0')
+                    }
+                }
+            }
+        })
     }));
 
     // var events = [];

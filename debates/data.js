@@ -2,48 +2,6 @@
 
 var datas = [
     {
-        date: '2017-06-03',
-        style: 'British Parliamentary',
-        teams: {
-            proposition: {
-                opening: {
-                    name: 'Opening Proposition',
-                    score: {
-                        original: 31,
-                        adjusted: undefined
-                    },
-                    members: ['Omar Richardson', 'Georgia Garner']
-                },
-                closing: {
-                    name: 'Closing Proposition',
-                    score: {
-                        original: 32,
-                        adjusted: undefined
-                    },
-                    members: ['Oden Tinuviel', 'Iole Paol']
-                }
-            },
-            opposition: {
-                opening: {
-                    name: 'Opening Opposition',
-                    score: {
-                        original: 38,
-                        adjusted: undefined
-                    },
-                    members: ['Audrey Walton  ', 'Wilburh Purdie']
-                },
-                closing: {
-                    name: 'Closing Opposition',
-                    score: {
-                        original: 29,
-                        adjusted: undefined
-                    },
-                    members: ['Finley Fachtna', 'Dianne Cook']
-                }
-            }
-        }
-    },
-    {
         date: '2017-06-10',
         style: 'Australasia',
         teams: {
@@ -194,6 +152,48 @@ var datas = [
                     adjusted: undefined
                 },
                 members: ['Audrey Walton', 'Angelia Coco', 'Finley Fachtna']
+            }
+        }
+    },
+    {
+        date: '2017-06-03',
+        style: 'British Parliamentary',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 31,
+                        adjusted: undefined
+                    },
+                    members: ['Omar Richardson', 'Georgia Garner']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 32,
+                        adjusted: undefined
+                    },
+                    members: ['Oden Tinuviel', 'Iole Paol']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 38,
+                        adjusted: undefined
+                    },
+                    members: ['Audrey Walton', 'Wilburh Purdie']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 29,
+                        adjusted: undefined
+                    },
+                    members: ['Finley Fachtna', 'Dianne Cook']
+                }
             }
         }
     }

@@ -1,5 +1,5 @@
 .events, .ranking {
-    padding: 0.5rem 0 0 0;
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
 }
 
 .event {
@@ -37,12 +37,8 @@
     line-height: 1.2rem;
 }
 
-.ranking-member-name {
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-
-.ranking-member-score {
+.ranking-member-name, .ranking-member-performance, .ranking-member-score {
+    padding: 0;
     font-size: 0.8rem;
     font-weight: 400;
 }
