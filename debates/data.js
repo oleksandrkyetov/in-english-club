@@ -241,5 +241,298 @@ var datas = [
                 }
             }
         }
+    },
+    {
+        date: '2017-04-08',
+        style: 'Australasia',
+        topic: 'This House believes that men and women can be just friends',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 35,
+                    adjusted: undefined
+                },
+                members: ['Alexander Moshurovskiy', 'Viktoriia Krykhno', 'Marina Yukhymets']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 35,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Olga Konyakhyna', 'Volodymyr Walduk']
+            }
+        }
+    },
+    {
+        date: '2017-04-15',
+        style: 'British Parliamentary',
+        topic: 'This House believes that we have to bring democracy to such totalitarian countries like North Korea',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 35,
+                        adjusted: undefined
+                    },
+                    members: ['Dmytro Petryk', 'Oksana Nechiporenko']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 25,
+                        adjusted: undefined
+                    },
+                    members: ['Marina Yukhymets', 'Olga Konyakhyna']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 33,
+                        adjusted: undefined
+                    },
+                    members: ['Pavel Karnaukhov', 'Anastasiya Ivanova']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 38,
+                        adjusted: undefined
+                    },
+                    members: ['Dmitry Golivets', 'Станіслав Шитий']
+                }
+            }
+        }
+    },
+    {
+        date: '2017-04-22',
+        style: 'Australasia',
+        topic: 'This House believes that marriage is an outdated institution',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 54,
+                    adjusted: undefined
+                },
+                members: ['Alexander Moshurovskiy', 'Dmitry Golivets', 'Oksana Nechiporenko']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 46,
+                    adjusted: undefined
+                },
+                members: ['Viktoriia Krykhno', 'Marina Yukhymets', 'Pavel Karnaukhov']
+            }
+        }
+    },
+    {
+        date: '2017-04-29',
+        style: 'Australasia',
+        topic: 'This House believes that humanity has to stop further development of artificial intelligence',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 59,
+                    adjusted: undefined
+                },
+                members: ['Pavel Karnaukhov', 'Volodymyr Walduk', 'Anastasiya Ivanova']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 66,
+                    adjusted: undefined
+                },
+                members: ['Marina Yukhymets', 'Oksana Nechiporenko', 'Julia Turkevich']
+            }
+        }
+    },
+    {
+        date: '2017-05-06',
+        style: 'Australasia',
+        topic: 'T',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 55,
+                    adjusted: undefined
+                },
+                members: ['Alexander Moshurovskiy', 'Kateryna Zhurkina', 'Dmytro Petryk']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 42,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Sergey Kochergan']
+            }
+        }
+    },
+    {
+        date: '2017-05-27',
+        style: 'Australasia',
+        topic: 'This House claims that nowadays childhood is not as nice as it used to be',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 52,
+                    adjusted: undefined
+                },
+                members: ['Anastasiya Ivanova', 'Pavel Karnaukhov', 'Oleksandr Voitsekhovskyi']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 64,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Anastacia Sooltanova']
+            }
+        }
+    },
+    {
+        date: '2017-06-03',
+        style: 'Australasia',
+        topic: 'This House claims that working remotely is better than working in the office',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 57,
+                    adjusted: undefined
+                },
+                members: ['Oxana Ilyashenko', 'Anastasiya Ivanova', 'Станіслав Шитий']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 73,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Pavel Karnaukhov', 'Dmitry Golivets']
+            }
+        }
+    },
+    {
+        date: '2017-06-24',
+        style: 'Australasia',
+        topic: 'This House believes that life with children is much better',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 30,
+                    adjusted: undefined
+                },
+                    members: ['Rob Godin', 'Sergey Kondratyuk', 'Станіслав Шитий']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 36,
+                    adjusted: undefined
+                },
+                members: ['Alexander Moshurovskiy', 'Dmytro Petryk', 'Dmitry Golivets']
+            }
+        }
+    },
+    {
+        date: '2017-07-08',
+        style: 'Australasia',
+        topic: 'This House claims that being single is better than being in a relationship',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 45,
+                    adjusted: undefined
+                },
+                members: ['Станіслав Шитий', 'Alexander Moshurovskiy', 'Pavel Karnaukhov']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 49,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Sergey Kondratyuk']
+            }
+        }
+    },
+    {
+        date: '2017-07-15',
+        style: 'Australasia',
+        topic: 'This House claims that we need to maintain local traditions instead of accepting global culture',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 42,
+                    adjusted: undefined
+                },
+                members: ['Станіслав Шитий', 'Olga Konyakhyna', 'Sergey Kondratyuk']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 48,
+                    adjusted: undefined
+                },
+                members: ['Фирас Бурзан', 'Pavel Karnaukhov', 'Oksana Nechiporenko']
+            }
+        }
+    },
+    {
+        date: '2017-07-22',
+        style: 'British Parliamentary',
+        topic: 'This House believes that online self-education is better than traditional university degree',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 22,
+                        adjusted: undefined
+                    },
+                    members: ['Фирас Бурзан', 'Sergey Kondratyuk']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 26,
+                        adjusted: undefined
+                    },
+                    members: ['Pavel Karnaukhov', 'Sasha Leshchenko']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 29,
+                        adjusted: undefined
+                    },
+                    members: ['Anastacia Sooltanova', 'Dmitry Golivets']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 27,
+                        adjusted: undefined
+                    },
+                    members: ['Dmytro Petryk', 'Mariia Korotkova']
+                }
+            }
+        }
     }
 ];
