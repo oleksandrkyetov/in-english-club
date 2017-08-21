@@ -534,5 +534,117 @@ var datas = [
                 }
             }
         }
+    },
+    {
+        date: '2017-07-29',
+        style: 'Australasia',
+        topic: 'This House claims that living in the city is much better than outside the city',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 34,
+                    adjusted: undefined
+                },
+                members: ['Фирас Бурзан', 'Alexander Moshurovskiy', 'Станіслав Шитий']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 31,
+                    adjusted: undefined
+                },
+                members: ['Sergey Kondratyuk', 'Pavel Karnaukhov', 'Katya Kirey']
+            }
+        }
+    },
+    {
+        date: '2017-08-05',
+        style: 'British Parliamentary',
+        topic: 'This House believes that voluntary euthanasia should be legalized',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 11,
+                        adjusted: undefined
+                    },
+                    members: ['Anastacia Sooltanova', 'Natalia Kornaeva']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 18,
+                        adjusted: undefined
+                    },
+                    members: ['Alexander Moshurovskiy', 'Katya Kirey']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 24,
+                        adjusted: undefined
+                    },
+                    members: ['Oksana Nechiporenko', 'Pavel Karnaukhov']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 30,
+                        adjusted: undefined
+                    },
+                    members: ['Dmytro Petryk', 'Anastasiya Ivanova']
+                }
+            }
+        }
+    },
+    {
+        date: '2017-08-12',
+        style: 'Australasia',
+        topic: 'This House believes that humanity needs to stop exploration of the universe',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 24,
+                    adjusted: undefined
+                },
+                members: ['Pavel Karnaukhov', 'Oleksandr Kyetov', 'Sergey Kondratyuk']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 24,
+                    adjusted: undefined
+                },
+                members: ['Фирас Бурзан', 'Станіслав Шитий', 'Jane Doe']
+            }
+        }
+    },
+    {
+        date: '2017-08-09',
+        style: 'Australasia',
+        topic: 'This House believes that diversity at comapnies should be maintained at any cost',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: {
+                    original: 18,
+                    adjusted: undefined
+                },
+                members: ['Sergey Kondratyuk', 'James Doe', 'John Doe']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: {
+                    original: 16,
+                    adjusted: undefined
+                },
+                members: ['Oksana Nechiporenko', 'Фирас Бурзан', 'Jane Doe']
+            }
+        }
     }
 ];
