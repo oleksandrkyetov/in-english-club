@@ -1,36 +1,48 @@
 'use strict';
 
 var datas = [
-    // {
-    //     date: '2017-06-03',
-    //     style: 'British Parliamentary',
-    //     teams: {
-    //         proposition: {
-    //             opening: {
-    //                 name: 'Opening Proposition',
-    //                 score: '31',
-    //                 members: ['Jennie Klein', 'Lucille Little']
-    //             },
-    //             closing: {
-    //                 name: 'Closing Proposition',
-    //                 score: '32',
-    //                 members: ['Alberta Payne', 'Allen Watkins']
-    //             }
-    //         },
-    //         opposition: {
-    //             opening: {
-    //                 name: 'Opening Opposition',
-    //                 score: '38',
-    //                 members: ['Joey Bowman  ', 'Paul Alvarado']
-    //             },
-    //             closing: {
-    //                 name: 'Closing Opposition',
-    //                 score: '29',
-    //                 members: ['Pat Harmon', 'Sabrina Daniel']
-    //             }
-    //         }
-    //     }
-    // }
+    {
+        date: '2017-06-03',
+        style: 'British Parliamentary',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening Proposition',
+                    score: {
+                        original: 31,
+                        adjusted: undefined
+                    },
+                    members: ['Omar Richardson', 'Georgia Garner']
+                },
+                closing: {
+                    name: 'Closing Proposition',
+                    score: {
+                        original: 32,
+                        adjusted: undefined
+                    },
+                    members: ['Oden Tinuviel', 'Iole Paol']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening Opposition',
+                    score: {
+                        original: 38,
+                        adjusted: undefined
+                    },
+                    members: ['Audrey Walton  ', 'Wilburh Purdie']
+                },
+                closing: {
+                    name: 'Closing Opposition',
+                    score: {
+                        original: 29,
+                        adjusted: undefined
+                    },
+                    members: ['Finley Fachtna', 'Dianne Cook']
+                }
+            }
+        }
+    },
     {
         date: '2017-06-10',
         style: 'Australasia',
