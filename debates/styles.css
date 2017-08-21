@@ -1,0 +1,48 @@
+.events, .ranking {
+    padding: 0.5rem 0 0 0;
+}
+
+.event {
+    padding-bottom: 1rem
+}
+
+.score {
+    font-size: 1.2rem;
+}
+
+.winner {
+    color: #0d47a1;
+}
+
+.team-titles {
+    line-height: 2.0rem;
+}
+
+.team-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.team-members {
+    line-height: 1rem;
+}
+
+.team-member {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.ranking-member {
+    padding: 0;
+    line-height: 1.2rem;
+}
+
+.ranking-member-name {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.ranking-member-score {
+    font-size: 0.8rem;
+    font-weight: 400;
+}

@@ -7,8 +7,8 @@ body {
     margin: 0;
 }
 
-.project-logos, .events {
-    padding: 10px 10px 10px 10px;
+.project-logos {
+    padding: 0;
 }
 
 .pull-right {
@@ -25,32 +25,6 @@ body {
 
 .pull-text-left {
     text-align: left;
-}
-
-.score {
-    font-size: 1.4rem;
-}
-
-.winner {
-    color: #0d47a1;
-}
-
-.team-titles {
-    line-height: 2.0rem;
-}
-
-.team-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.team-members {
-    line-height: 1rem;
-}
-
-.team-member {
-    font-size: 0.8rem;
-    font-weight: 400;
 }
 
 .no-padding {
