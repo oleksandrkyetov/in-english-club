@@ -13,7 +13,7 @@ var datas = [
                         original: 16,
                         adjusted: undefined
                     },
-                    members: ['Anastasiya Ivanova', 'Olga Konyakhyna']
+                    members: ['Josefina Herrera', 'Hannah Hubbard']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -21,7 +21,7 @@ var datas = [
                         original: 17,
                         adjusted: undefined
                     },
-                    members: ['Pavel Karnaukhov', 'Marina Yukhymets']
+                    members: ['Enrique Houston', 'Krista Poole']
                 }
             },
             opposition: {
@@ -31,7 +31,7 @@ var datas = [
                         original: 18,
                         adjusted: undefined
                     },
-                    members: ['Alexander Moshurovskiy', 'Dmytro Petryk']
+                    members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -39,7 +39,7 @@ var datas = [
                         original: 17,
                         adjusted: undefined
                     },
-                    members: ['Dmitry Golivets', 'Anastacia Sooltanova']
+                    members: ['Cory Salazar', 'April Aguilar']
                 }
             }
         }
@@ -55,7 +55,7 @@ var datas = [
                     original: 34,
                     adjusted: undefined
                 },
-                members: ['Anastasiya Ivanova', 'Kateryna Zhurkina', 'Alexander Moshurovskiy']
+                members: ['Josefina Herrera', 'Julia Castro', 'Ramon Willis']
             },
             opposition: {
                 name: 'Opposition',
@@ -63,7 +63,7 @@ var datas = [
                     original: 21,
                     adjusted: undefined
                 },
-                members: ['Oxana Ilyashenko', 'Станіслав Шитий', 'Yuriy Prus']
+                members: ['Sharon Fitzgerald', 'Benjamin Wheeler', 'Preston Logan']
             }
         }
     },
@@ -79,7 +79,7 @@ var datas = [
                         original: 21,
                         adjusted: undefined
                     },
-                    members: ['Anastasiya Ivanova', 'Alexander Moshurovskiy']
+                    members: ['Josefina Herrera', 'Ramon Willis']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -87,7 +87,7 @@ var datas = [
                         original: 18,
                         adjusted: undefined
                     },
-                    members: ['Oksana Nechiporenko', 'Станіслав Шитий']
+                    members: ['Jeannie Brown', 'Benjamin Wheeler']
                 }
             },
             opposition: {
@@ -97,7 +97,7 @@ var datas = [
                         original: 19,
                         adjusted: undefined
                     },
-                    members: ['Dmitry Golivets', 'Pavel Karnaukhov']
+                    members: ['Cory Salazar', 'Enrique Houston']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -105,7 +105,7 @@ var datas = [
                         original: 23,
                         adjusted: undefined
                     },
-                    members: ['Julia Turkevich', 'Dmytro Petryk']
+                    members: ['Sharon Terry', 'Tommy Welch']
                 }
             }
         }
@@ -121,7 +121,7 @@ var datas = [
                     original: 44,
                     adjusted: undefined
                 },
-                members: ['Станіслав Шитий', 'Alexander Moshurovskiy', 'Alina Sergeevna']
+                members: ['Benjamin Wheeler', 'Ramon Willis', 'Myra Johnston']
             },
             opposition: {
                 name: 'Opposition',
@@ -129,7 +129,7 @@ var datas = [
                     original: 43,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Dmitry Golivets']
+                members: ['Jeannie Brown', 'Krista Poole', 'Cory Salazar']
             }
         }
     },
@@ -145,7 +145,7 @@ var datas = [
                         original: 22,
                         adjusted: undefined
                     },
-                    members: ['Alexander Moshurovskiy', 'Dmytro Petryk']
+                    members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -153,7 +153,7 @@ var datas = [
                         original: 24,
                         adjusted: undefined
                     },
-                    members: ['Oksana Nechiporenko', 'Oleksii Malashyna']
+                    members: ['Jeannie Brown', 'Austin Bates']
                 }
             },
             opposition: {
@@ -163,7 +163,7 @@ var datas = [
                         original: 16,
                         adjusted: undefined
                     },
-                    members: ['Pavel Karnaukhov', 'Alona Malashyna']
+                    members: ['Enrique Houston', 'Ramona Moss']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -171,7 +171,7 @@ var datas = [
                         original: 21,
                         adjusted: undefined
                     },
-                    members: ['Anastasiya Ivanova', 'Liliya Dmitrieva']
+                    members: ['Josefina Herrera', 'Lorene Moody']
                 }
             }
         }
@@ -187,7 +187,7 @@ var datas = [
                     original: 33,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Евгения Шиндер']
+                members: ['Jeannie Brown', 'Krista Poole', 'Kristine Quinn']
             },
             opposition: {
                 name: 'Opposition',
@@ -195,7 +195,7 @@ var datas = [
                     original: 37,
                     adjusted: undefined
                 },
-                members: ['Dmytro Petryk', 'Pavel Karnaukhov', 'Oleksandr Kyetov']
+                members: ['Tommy Welch', 'Enrique Houston', 'Justin Ford']
             }
         }
     },
@@ -211,7 +211,7 @@ var datas = [
                         original: 24,
                         adjusted: undefined
                     },
-                    members: ['Dmitry Golivets', 'Viktoriia Krykhno']
+                    members: ['Cory Salazar', 'Genevieve Simon']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -219,7 +219,7 @@ var datas = [
                         original: 18,
                         adjusted: undefined
                     },
-                    members: ['Oleksii Malashyna', 'Oksana Nechiporenko']
+                    members: ['Austin Bates', 'Jeannie Brown']
                 }
             },
             opposition: {
@@ -229,7 +229,7 @@ var datas = [
                         original: 22,
                         adjusted: undefined
                     },
-                    members: ['Pavel Karnaukhov', 'Dmytro Petryk']
+                    members: ['Enrique Houston', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -237,7 +237,7 @@ var datas = [
                         original: 22,
                         adjusted: undefined
                     },
-                    members: ['Alona Malashyna', 'Julia Turkevich']
+                    members: ['Ramona Moss', 'Sharon Terry']
                 }
             }
         }
@@ -253,7 +253,7 @@ var datas = [
                     original: 35,
                     adjusted: undefined
                 },
-                members: ['Alexander Moshurovskiy', 'Viktoriia Krykhno', 'Marina Yukhymets']
+                members: ['Ramon Willis', 'Genevieve Simon', 'Krista Poole']
             },
             opposition: {
                 name: 'Opposition',
@@ -261,7 +261,7 @@ var datas = [
                     original: 35,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Olga Konyakhyna', 'Volodymyr Walduk']
+                members: ['Jeannie Brown', 'Hannah Hubbard', 'Maurice Castro']
             }
         }
     },
@@ -277,7 +277,7 @@ var datas = [
                         original: 35,
                         adjusted: undefined
                     },
-                    members: ['Dmytro Petryk', 'Oksana Nechiporenko']
+                    members: ['Tommy Welch', 'Jeannie Brown']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -285,7 +285,7 @@ var datas = [
                         original: 25,
                         adjusted: undefined
                     },
-                    members: ['Marina Yukhymets', 'Olga Konyakhyna']
+                    members: ['Krista Poole', 'Hannah Hubbard']
                 }
             },
             opposition: {
@@ -295,7 +295,7 @@ var datas = [
                         original: 33,
                         adjusted: undefined
                     },
-                    members: ['Pavel Karnaukhov', 'Anastasiya Ivanova']
+                    members: ['Enrique Houston', 'Josefina Herrera']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -303,7 +303,7 @@ var datas = [
                         original: 38,
                         adjusted: undefined
                     },
-                    members: ['Dmitry Golivets', 'Станіслав Шитий']
+                    members: ['Cory Salazar', 'Benjamin Wheeler']
                 }
             }
         }
@@ -319,7 +319,7 @@ var datas = [
                     original: 54,
                     adjusted: undefined
                 },
-                members: ['Alexander Moshurovskiy', 'Dmitry Golivets', 'Oksana Nechiporenko']
+                members: ['Ramon Willis', 'Cory Salazar', 'Jeannie Brown']
             },
             opposition: {
                 name: 'Opposition',
@@ -327,7 +327,7 @@ var datas = [
                     original: 46,
                     adjusted: undefined
                 },
-                members: ['Viktoriia Krykhno', 'Marina Yukhymets', 'Pavel Karnaukhov']
+                members: ['Genevieve Simon', 'Krista Poole', 'Enrique Houston']
             }
         }
     },
@@ -342,7 +342,7 @@ var datas = [
                     original: 59,
                     adjusted: undefined
                 },
-                members: ['Pavel Karnaukhov', 'Volodymyr Walduk', 'Anastasiya Ivanova']
+                members: ['Enrique Houston', 'Maurice Castro', 'Josefina Herrera']
             },
             opposition: {
                 name: 'Opposition',
@@ -350,7 +350,7 @@ var datas = [
                     original: 66,
                     adjusted: undefined
                 },
-                members: ['Marina Yukhymets', 'Oksana Nechiporenko', 'Julia Turkevich']
+                members: ['Krista Poole', 'Jeannie Brown', 'Sharon Terry']
             }
         }
     },
@@ -365,7 +365,7 @@ var datas = [
                     original: 55,
                     adjusted: undefined
                 },
-                members: ['Alexander Moshurovskiy', 'Kateryna Zhurkina', 'Dmytro Petryk']
+                members: ['Ramon Willis', 'Julia Castro', 'Tommy Welch']
             },
             opposition: {
                 name: 'Opposition',
@@ -373,7 +373,7 @@ var datas = [
                     original: 42,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Sergey Kochergan']
+                members: ['Jeannie Brown', 'Krista Poole', 'Sidney Cross']
             }
         }
     },
@@ -388,7 +388,7 @@ var datas = [
                     original: 52,
                     adjusted: undefined
                 },
-                members: ['Anastasiya Ivanova', 'Pavel Karnaukhov', 'Oleksandr Voitsekhovskyi']
+                members: ['Josefina Herrera', 'Enrique Houston', 'Ervin Peters']
             },
             opposition: {
                 name: 'Opposition',
@@ -396,7 +396,7 @@ var datas = [
                     original: 64,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Anastacia Sooltanova']
+                members: ['Jeannie Brown', 'Krista Poole', 'April Aguilar']
             }
         }
     },
@@ -411,7 +411,7 @@ var datas = [
                     original: 57,
                     adjusted: undefined
                 },
-                members: ['Oxana Ilyashenko', 'Anastasiya Ivanova', 'Станіслав Шитий']
+                members: ['Sharon Fitzgerald', 'Josefina Herrera', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
@@ -419,7 +419,7 @@ var datas = [
                     original: 73,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Pavel Karnaukhov', 'Dmitry Golivets']
+                members: ['Jeannie Brown', 'Enrique Houston', 'Cory Salazar']
             }
         }
     },
@@ -434,7 +434,7 @@ var datas = [
                     original: 30,
                     adjusted: undefined
                 },
-                    members: ['Rob Godin', 'Sergey Kondratyuk', 'Станіслав Шитий']
+                    members: ['Russell Fields', 'Ellis Kelly', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
@@ -442,7 +442,7 @@ var datas = [
                     original: 36,
                     adjusted: undefined
                 },
-                members: ['Alexander Moshurovskiy', 'Dmytro Petryk', 'Dmitry Golivets']
+                members: ['Ramon Willis', 'Tommy Welch', 'Cory Salazar']
             }
         }
     },
@@ -457,7 +457,7 @@ var datas = [
                     original: 45,
                     adjusted: undefined
                 },
-                members: ['Станіслав Шитий', 'Alexander Moshurovskiy', 'Pavel Karnaukhov']
+                members: ['Benjamin Wheeler', 'Ramon Willis', 'Enrique Houston']
             },
             opposition: {
                 name: 'Opposition',
@@ -465,7 +465,7 @@ var datas = [
                     original: 49,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Marina Yukhymets', 'Sergey Kondratyuk']
+                members: ['Jeannie Brown', 'Krista Poole', 'Ellis Kelly']
             }
         }
     },
@@ -480,7 +480,7 @@ var datas = [
                     original: 42,
                     adjusted: undefined
                 },
-                members: ['Станіслав Шитий', 'Olga Konyakhyna', 'Sergey Kondratyuk']
+                members: ['Benjamin Wheeler', 'Hannah Hubbard', 'Ellis Kelly']
             },
             opposition: {
                 name: 'Opposition',
@@ -488,7 +488,7 @@ var datas = [
                     original: 48,
                     adjusted: undefined
                 },
-                members: ['Фирас Бурзан', 'Pavel Karnaukhov', 'Oksana Nechiporenko']
+                members: ['Conrad Norman', 'Enrique Houston', 'Jeannie Brown']
             }
         }
     },
@@ -504,7 +504,7 @@ var datas = [
                         original: 22,
                         adjusted: undefined
                     },
-                    members: ['Фирас Бурзан', 'Sergey Kondratyuk']
+                    members: ['Conrad Norman', 'Ellis Kelly']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -512,7 +512,7 @@ var datas = [
                         original: 26,
                         adjusted: undefined
                     },
-                    members: ['Pavel Karnaukhov', 'Sasha Leshchenko']
+                    members: ['Enrique Houston', 'Juan Holmes']
                 }
             },
             opposition: {
@@ -522,7 +522,7 @@ var datas = [
                         original: 29,
                         adjusted: undefined
                     },
-                    members: ['Anastacia Sooltanova', 'Dmitry Golivets']
+                    members: ['April Aguilar', 'Cory Salazar']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -530,7 +530,7 @@ var datas = [
                         original: 27,
                         adjusted: undefined
                     },
-                    members: ['Dmytro Petryk', 'Mariia Korotkova']
+                    members: ['Tommy Welch', 'Claudia Frazier']
                 }
             }
         }
@@ -546,7 +546,7 @@ var datas = [
                     original: 34,
                     adjusted: undefined
                 },
-                members: ['Фирас Бурзан', 'Alexander Moshurovskiy', 'Станіслав Шитий']
+                members: ['Conrad Norman', 'Ramon Willis', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
@@ -554,7 +554,7 @@ var datas = [
                     original: 31,
                     adjusted: undefined
                 },
-                members: ['Sergey Kondratyuk', 'Pavel Karnaukhov', 'Katya Kirey']
+                members: ['Ellis Kelly', 'Enrique Houston', 'Sheryl Jimenez']
             }
         }
     },
@@ -570,7 +570,7 @@ var datas = [
                         original: 11,
                         adjusted: undefined
                     },
-                    members: ['Anastacia Sooltanova', 'Natalia Kornaeva']
+                    members: ['April Aguilar', 'Pearl May']
                 },
                 closing: {
                     name: 'Closing Proposition',
@@ -578,7 +578,7 @@ var datas = [
                         original: 18,
                         adjusted: undefined
                     },
-                    members: ['Alexander Moshurovskiy', 'Katya Kirey']
+                    members: ['Ramon Willis', 'Sheryl Jimenez']
                 }
             },
             opposition: {
@@ -588,7 +588,7 @@ var datas = [
                         original: 24,
                         adjusted: undefined
                     },
-                    members: ['Oksana Nechiporenko', 'Pavel Karnaukhov']
+                    members: ['Jeannie Brown', 'Enrique Houston']
                 },
                 closing: {
                     name: 'Closing Opposition',
@@ -596,7 +596,7 @@ var datas = [
                         original: 30,
                         adjusted: undefined
                     },
-                    members: ['Dmytro Petryk', 'Anastasiya Ivanova']
+                    members: ['Tommy Welch', 'Josefina Herrera']
                 }
             }
         }
@@ -612,7 +612,7 @@ var datas = [
                     original: 24,
                     adjusted: undefined
                 },
-                members: ['Pavel Karnaukhov', 'Oleksandr Kyetov', 'Sergey Kondratyuk']
+                members: ['Enrique Houston', 'Justin Ford', 'Ellis Kelly']
             },
             opposition: {
                 name: 'Opposition',
@@ -620,7 +620,7 @@ var datas = [
                     original: 24,
                     adjusted: undefined
                 },
-                members: ['Фирас Бурзан', 'Станіслав Шитий', 'Jane Doe']
+                members: ['Conrad Norman', 'Benjamin Wheeler', 'Jane Doe']
             }
         }
     },
@@ -635,7 +635,7 @@ var datas = [
                     original: 18,
                     adjusted: undefined
                 },
-                members: ['Sergey Kondratyuk', 'James Doe', 'John Doe']
+                members: ['Ellis Kelly', 'James Doe', 'John Doe']
             },
             opposition: {
                 name: 'Opposition',
@@ -643,7 +643,7 @@ var datas = [
                     original: 16,
                     adjusted: undefined
                 },
-                members: ['Oksana Nechiporenko', 'Фирас Бурзан', 'Jane Doe']
+                members: ['Jeannie Brown', 'Conrad Norman', 'Jane Doe']
             }
         }
     }
