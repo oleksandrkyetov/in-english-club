@@ -1,5 +1,35 @@
+@media screen and (min-width: 320px) {
+    .container-fluid-centered {
+        padding: 0 0 0 0;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container-fluid-centered {
+        padding: 0 10% 0 10%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .container-fluid-centered {
+        padding: 0 20% 0 20%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container-fluid-centered {
+        padding: 0 30% 0 30%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container-fluid-centered {
+        padding: 0 40% 0 40%;
+    }
+}
+
 .events, .ranking {
-    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    padding: 0;
 }
 
 .event {
@@ -34,14 +64,22 @@
 
 .ranking-header {
     padding: 0;
+    font-size: 0.9rem;
     font-weight: 600;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
+    white-space: nowrap;
 }
 
 .ranking-row {
     padding: 0;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.6rem;
+    white-space: nowrap;
+}
+
+.ranking-header, .ranking-row {
+    padding: 0 0.4rem 0 0.4rem;
 }
 
 .ranking-row-in {
@@ -58,5 +96,4 @@
 
 .ranking-row-name, .ranking-row-performance, .ranking-row-score {
     padding: 0;
-    font-size: 0.8rem;
 }
