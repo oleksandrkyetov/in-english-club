@@ -33,8 +33,7 @@
 <script id="ranking-template" type="text/x-handlebars-template">
     <div class="col-12 ranking-header">
         <div class="row">
-            <div class="col-5 ranking-row-name">Name</div>
-            <div class="col-1 ranking-row-performance">.</div>
+            <div class="col-6 ranking-row-name">Name</div>
             <div class="col-2 ranking-row-score">Average</div>
             <div class="col-2 ranking-row-score">Total</div>
             <div class="col-2 ranking-row-score">Count</div>
@@ -43,8 +42,7 @@
     {{#each ranking.in}}
         <div class="col-12 ranking-row ranking-row-in">
             <div class="row">
-                <div class="col-5 ranking-row-name">{{this.name}}</div>
-                <div class="col-1 ranking-row-performance">.</div>
+                <div class="col-6 ranking-row-name">{{this.name}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
@@ -54,8 +52,7 @@
     {{#each ranking.out}}
         <div class="col-12 ranking-row ranking-row-out">
             <div class="row">
-                <div class="col-5 ranking-row-name">{{this.name}}</div>
-                <div class="col-1 ranking-row-performance">.</div>
+                <div class="col-6 ranking-row-name">{{this.name}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
