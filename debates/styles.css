@@ -18,13 +18,19 @@
 
 @media screen and (min-width: 800px) {
     .container-fluid-centered {
+        padding: 0 25% 0 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-fluid-centered {
         padding: 0 30% 0 30%;
     }
 }
 
 @media screen and (min-width: 1600px) {
     .container-fluid-centered {
-        padding: 0 40% 0 40%;
+        padding: 0 35% 0 35%;
     }
 }
 
