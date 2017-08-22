@@ -13,23 +13,32 @@ $(document).ready(function() {
         ranking: _.sortBy(_.map(ranking, function(value, key) {
             return {
                 name: key,
-                score: {
+                rank: {
                     total: {
-                        original: value.total.original,
-                        formatted: numeral(value.total.original * 100).format('0.0')
+                        count: value.total.count,
+                        score: {
+                            original: value.total.score.original,
+                            average: value.total.score.original / value.total.count
+                        }
                     },
                     proposition: {
-                        original: value.proposition.original,
-                        formatted: numeral(value.proposition.original * 100).format('0.0')
+                        count: value.proposition.count,
+                        score: {
+                            original: value.proposition.score.original,
+                            average: value.proposition.score.original / value.total.count
+                        }
                     },
                     opposition: {
-                        original: value.opposition.original,
-                        formatted: numeral(value.opposition.original * 100).format('0.0')
+                        count: value.opposition.count,
+                        score: {
+                            original: value.opposition.score.original,
+                            average: value.opposition.score.original / value.total.count
+                        }
                     }
                 }
             }
         }), function(value) {
-            return -1 * value.score.total.original
+            return -1 * value.rank.total.score.average;
         })
     }));
 
