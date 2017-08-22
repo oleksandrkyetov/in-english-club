@@ -29,6 +29,19 @@ var creators = {
 
 var computations = {
     ranking: {
+        compute: function(datas) {
+            var ranking = {};
+
+            computations.ranking.australasia.compute(_.filter(datas, function(data) {
+                return data.style === 'Australasia'
+            }), ranking);
+
+            computations.ranking.bp.compute(_.filter(datas, function(data) {
+                return data.style === 'British Parliamentary'
+            }), ranking);
+
+            return ranking;
+        },
         australasia: {
             compute: function (datas, ranking) {
                 _.each(datas, function (data) {

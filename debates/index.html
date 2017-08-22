@@ -31,29 +31,34 @@
 </html>
 
 <script id="ranking-template" type="text/x-handlebars-template">
-    <div class="col-12 ranking-row">
+    <div class="col-12 ranking-header">
         <div class="row">
-            <div class="col-5 ranking-row-name">Name</div>
-            <div class="col-1 ranking-row-performance">Performance</div>
-            <div class="col-1 ranking-row-score">Total Average</div>
-            <div class="col-1 ranking-row-score">Total </div>
-            <div class="col-1 ranking-row-score">Proposition Average</div>
-            <div class="col-1 ranking-row-score">Proposition</div>
-            <div class="col-1 ranking-row-score">Opposition Average</div>
-            <div class="col-1 ranking-row-score">Opposition</div>
+            <div class="col-5 ranking-row-name">N</div>
+            <div class="col-1 ranking-row-performance">P</div>
+            <div class="col-2 ranking-row-score">A</div>
+            <div class="col-2 ranking-row-score">T</div>
+            <div class="col-2 ranking-row-score">C</div>
         </div>
     </div>
-    {{#each ranking}}
-        <div class="col-12 ranking-row">
+    {{#each ranking.in}}
+        <div class="col-12 ranking-row ranking-row-in">
             <div class="row">
                 <div class="col-5 ranking-row-name">{{this.name}}</div>
                 <div class="col-1 ranking-row-performance">.</div>
-                <div class="col-1 ranking-row-score">{{this.rank.total.score.average}}</div>
-                <div class="col-1 ranking-row-score">{{this.rank.total.score.original}}</div>
-                <div class="col-1 ranking-row-score">{{this.rank.proposition.score.average}}</div>
-                <div class="col-1 ranking-row-score">{{this.rank.proposition.score.original}}</div>
-                <div class="col-1 ranking-row-score">{{this.rank.opposition.score.average}}</div>
-                <div class="col-1 ranking-row-score">{{this.rank.opposition.score.original}}</div>
+                <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
+                <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
+                <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
+            </div>
+        </div>
+    {{/each}}
+    {{#each ranking.out}}
+        <div class="col-12 ranking-row ranking-row-out">
+            <div class="row">
+                <div class="col-5 ranking-row-name">{{this.name}}</div>
+                <div class="col-1 ranking-row-performance">.</div>
+                <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
+                <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
+                <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
             </div>
         </div>
     {{/each}}

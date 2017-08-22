@@ -1,45 +1,69 @@
 'use strict';
 
 $(document).ready(function() {
-    var ranking = {};
-    computations.ranking.australasia.compute(_.filter(datas, function(data) {
-        return data.style === 'Australasia'
-    }), ranking);
-    computations.ranking.bp.compute(_.filter(datas, function(data) {
-        return data.style === 'British Parliamentary'
-    }), ranking);
-
-    $('#ranking').html(Handlebars.compile($('#ranking-template').html())({
-        ranking: _.sortBy(_.map(ranking, function(value, key) {
+    var ranking = {
+        combined: _.map(computations.ranking.compute(datas), function (value, key) {
             return {
                 name: key,
                 rank: {
                     total: {
                         count: value.total.count,
                         score: {
-                            original: value.total.score.original,
-                            average: value.total.score.original / value.total.count
+                            original: {
+                                raw: value.total.score.original,
+                                formatted: numeral(value.total.score.original * 100).format('0.00')
+                            },
+                            average: {
+                                raw: value.total.score.original / value.total.count,
+                                formatted: numeral(value.total.score.original / value.total.count * 100).format('0.00')
+                            }
                         }
                     },
                     proposition: {
                         count: value.proposition.count,
                         score: {
-                            original: value.proposition.score.original,
-                            average: value.proposition.score.original / value.total.count
+                            original: {
+                                raw: value.proposition.score.original,
+                                formatted: numeral(value.proposition.score.original * 100).format('0.00')
+                            },
+                            average: {
+                                raw: value.proposition.score.original / value.total.count,
+                                formatted: numeral(value.proposition.score.original / value.total.count * 100).format('0.00')
+                            }
                         }
                     },
                     opposition: {
                         count: value.opposition.count,
                         score: {
-                            original: value.opposition.score.original,
-                            average: value.opposition.score.original / value.total.count
+                            original: {
+                                raw: value.opposition.score.original,
+                                formatted: numeral(value.opposition.score.original * 100).format('0.00')
+                            },
+                            average: {
+                                raw: value.opposition.score.original / value.total.count,
+                                formatted: numeral(value.opposition.score.original / value.total.count * 100).format('0.00')
+                            }
                         }
                     }
                 }
             }
-        }), function(value) {
-            return -1 * value.rank.total.score.average;
         })
+    };
+
+    ranking.in = _.sortBy(_.filter(ranking.combined, function(item) {
+        return item.rank.total.count >= 5
+    }), function(item) {
+        return -1 * item.rank.total.score.average.raw;
+    });
+
+    ranking.out = _.sortBy(_.filter(ranking.combined, function(item) {
+        return item.rank.total.count < 5
+    }), function(item) {
+        return -1 * item.rank.total.score.average.raw;
+    });
+
+    $('#ranking').html(Handlebars.compile($('#ranking-template').html())({
+        ranking: ranking
     }));
 
     // var events = [];
