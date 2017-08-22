@@ -234,7 +234,7 @@ var datas = [
                 closing: {
                     name: 'Closing Opposition',
                     score: {
-                        original: 0,
+                        original: 22,
                         adjusted: undefined
                     },
                     members: ['Alona Malashyna', 'Julia Turkevich']
@@ -357,7 +357,7 @@ var datas = [
     {
         date: '2017-05-06',
         style: 'Australasia',
-        topic: 'T',
+        topic: 'This House believes that a person can force another individual to change',
         teams: {
             proposition: {
                 name: 'Proposition',
