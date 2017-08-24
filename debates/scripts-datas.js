@@ -9,36 +9,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 16,
-                        adjusted: undefined
-                    },
+                    score: 16,
                     members: ['Josefina Herrera', 'Hannah Hubbard']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 17,
-                        adjusted: undefined
-                    },
+                    score: 17,
                     members: ['Enrique Houston', 'Krista Poole']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 18,
-                        adjusted: undefined
-                    },
+                    score: 18,
                     members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 17,
-                        adjusted: undefined
-                    },
+                    score: 17,
                     members: ['Cory Salazar', 'April Aguilar']
                 }
             }
@@ -51,18 +39,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 34,
-                    adjusted: undefined
-                },
+                score: 34,
                 members: ['Josefina Herrera', 'Julia Castro', 'Ramon Willis']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 21,
-                    adjusted: undefined
-                },
+                score: 21,
                 members: ['Sharon Fitzgerald', 'Benjamin Wheeler', 'Preston Logan']
             }
         }
@@ -75,36 +57,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 21,
-                        adjusted: undefined
-                    },
+                    score: 21,
                     members: ['Josefina Herrera', 'Ramon Willis']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 18,
-                        adjusted: undefined
-                    },
+                    score: 18,
                     members: ['Jeannie Brown', 'Benjamin Wheeler']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 19,
-                        adjusted: undefined
-                    },
+                    score: 19,
                     members: ['Cory Salazar', 'Enrique Houston']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 23,
-                        adjusted: undefined
-                    },
+                    score: 23,
                     members: ['Sharon Terry', 'Tommy Welch']
                 }
             }
@@ -117,18 +87,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 44,
-                    adjusted: undefined
-                },
+                score: 44,
                 members: ['Benjamin Wheeler', 'Ramon Willis', 'Myra Johnston']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 43,
-                    adjusted: undefined
-                },
+                score: 43,
                 members: ['Jeannie Brown', 'Krista Poole', 'Cory Salazar']
             }
         }
@@ -141,36 +105,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 22,
-                        adjusted: undefined
-                    },
+                    score: 22,
                     members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 24,
-                        adjusted: undefined
-                    },
+                    score: 24,
                     members: ['Jeannie Brown', 'Austin Bates']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 16,
-                        adjusted: undefined
-                    },
+                    score: 16,
                     members: ['Enrique Houston', 'Ramona Moss']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 21,
-                        adjusted: undefined
-                    },
+                    score: 21,
                     members: ['Josefina Herrera', 'Lorene Moody']
                 }
             }
@@ -183,18 +135,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 33,
-                    adjusted: undefined
-                },
+                score: 33,
                 members: ['Jeannie Brown', 'Krista Poole', 'Kristine Quinn']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 37,
-                    adjusted: undefined
-                },
+                score: 37,
                 members: ['Tommy Welch', 'Enrique Houston', 'Justin Ford']
             }
         }
@@ -207,36 +153,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 24,
-                        adjusted: undefined
-                    },
+                    score: 24,
                     members: ['Cory Salazar', 'Genevieve Simon']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 18,
-                        adjusted: undefined
-                    },
+                    score: 18,
                     members: ['Austin Bates', 'Jeannie Brown']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 22,
-                        adjusted: undefined
-                    },
+                    score: 22,
                     members: ['Enrique Houston', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 22,
-                        adjusted: undefined
-                    },
+                    score: 22,
                     members: ['Ramona Moss', 'Sharon Terry']
                 }
             }
@@ -249,18 +183,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 35,
-                    adjusted: undefined
-                },
+                score: 35,
                 members: ['Ramon Willis', 'Genevieve Simon', 'Krista Poole']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 35,
-                    adjusted: undefined
-                },
+                score: 35,
                 members: ['Jeannie Brown', 'Hannah Hubbard', 'Maurice Castro']
             }
         }
@@ -273,36 +201,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 35,
-                        adjusted: undefined
-                    },
+                    score: 35,
                     members: ['Tommy Welch', 'Jeannie Brown']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 25,
-                        adjusted: undefined
-                    },
+                    score: 25,
                     members: ['Krista Poole', 'Hannah Hubbard']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 33,
-                        adjusted: undefined
-                    },
+                    score: 33,
                     members: ['Enrique Houston', 'Josefina Herrera']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 38,
-                        adjusted: undefined
-                    },
+                    score: 38,
                     members: ['Cory Salazar', 'Benjamin Wheeler']
                 }
             }
@@ -315,18 +231,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 54,
-                    adjusted: undefined
-                },
+                score: 54,
                 members: ['Ramon Willis', 'Cory Salazar', 'Jeannie Brown']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 46,
-                    adjusted: undefined
-                },
+                score: 46,
                 members: ['Genevieve Simon', 'Krista Poole', 'Enrique Houston']
             }
         }
@@ -338,18 +248,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 59,
-                    adjusted: undefined
-                },
+                score: 59,
                 members: ['Enrique Houston', 'Maurice Castro', 'Josefina Herrera']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 66,
-                    adjusted: undefined
-                },
+                score: 66,
                 members: ['Krista Poole', 'Jeannie Brown', 'Sharon Terry']
             }
         }
@@ -361,18 +265,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 55,
-                    adjusted: undefined
-                },
+                score: 55,
                 members: ['Ramon Willis', 'Julia Castro', 'Tommy Welch']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 42,
-                    adjusted: undefined
-                },
+                score: 42,
                 members: ['Jeannie Brown', 'Krista Poole', 'Sidney Cross']
             }
         }
@@ -384,18 +282,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 52,
-                    adjusted: undefined
-                },
+                score: 52,
                 members: ['Josefina Herrera', 'Enrique Houston', 'Ervin Peters']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 64,
-                    adjusted: undefined
-                },
+                score: 64,
                 members: ['Jeannie Brown', 'Krista Poole', 'April Aguilar']
             }
         }
@@ -407,18 +299,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 57,
-                    adjusted: undefined
-                },
+                score: 57,
                 members: ['Sharon Fitzgerald', 'Josefina Herrera', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 73,
-                    adjusted: undefined
-                },
+                score: 73,
                 members: ['Jeannie Brown', 'Enrique Houston', 'Cory Salazar']
             }
         }
@@ -430,18 +316,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 30,
-                    adjusted: undefined
-                },
-                    members: ['Russell Fields', 'Ellis Kelly', 'Benjamin Wheeler']
+                score: 30,
+                members: ['Russell Fields', 'Ellis Kelly', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 36,
-                    adjusted: undefined
-                },
+                score: 36,
                 members: ['Ramon Willis', 'Tommy Welch', 'Cory Salazar']
             }
         }
@@ -453,18 +333,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 45,
-                    adjusted: undefined
-                },
+                score: 45,
                 members: ['Benjamin Wheeler', 'Ramon Willis', 'Enrique Houston']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 49,
-                    adjusted: undefined
-                },
+                score: 49,
                 members: ['Jeannie Brown', 'Krista Poole', 'Ellis Kelly']
             }
         }
@@ -476,18 +350,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 42,
-                    adjusted: undefined
-                },
+                score: 42,
                 members: ['Benjamin Wheeler', 'Hannah Hubbard', 'Ellis Kelly']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 48,
-                    adjusted: undefined
-                },
+                score: 48,
                 members: ['Conrad Norman', 'Enrique Houston', 'Jeannie Brown']
             }
         }
@@ -500,36 +368,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 22,
-                        adjusted: undefined
-                    },
+                    score: 22,
                     members: ['Conrad Norman', 'Ellis Kelly']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 26,
-                        adjusted: undefined
-                    },
+                    score: 26,
                     members: ['Enrique Houston', 'Juan Holmes']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 29,
-                        adjusted: undefined
-                    },
+                    score: 29,
                     members: ['April Aguilar', 'Cory Salazar']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 27,
-                        adjusted: undefined
-                    },
+                    score: 27,
                     members: ['Tommy Welch', 'Claudia Frazier']
                 }
             }
@@ -542,18 +398,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 34,
-                    adjusted: undefined
-                },
+                score: 34,
                 members: ['Conrad Norman', 'Ramon Willis', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 31,
-                    adjusted: undefined
-                },
+                score: 31,
                 members: ['Ellis Kelly', 'Enrique Houston', 'Sheryl Jimenez']
             }
         }
@@ -566,36 +416,24 @@ var datas = [
             proposition: {
                 opening: {
                     name: 'Opening Proposition',
-                    score: {
-                        original: 11,
-                        adjusted: undefined
-                    },
+                    score: 11,
                     members: ['April Aguilar', 'Pearl May']
                 },
                 closing: {
                     name: 'Closing Proposition',
-                    score: {
-                        original: 18,
-                        adjusted: undefined
-                    },
+                    score: 18,
                     members: ['Ramon Willis', 'Sheryl Jimenez']
                 }
             },
             opposition: {
                 opening: {
                     name: 'Opening Opposition',
-                    score: {
-                        original: 24,
-                        adjusted: undefined
-                    },
+                    score: 24,
                     members: ['Jeannie Brown', 'Enrique Houston']
                 },
                 closing: {
                     name: 'Closing Opposition',
-                    score: {
-                        original: 30,
-                        adjusted: undefined
-                    },
+                    score: 30,
                     members: ['Tommy Welch', 'Josefina Herrera']
                 }
             }
@@ -608,18 +446,12 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 24,
-                    adjusted: undefined
-                },
+                score: 24,
                 members: ['Enrique Houston', 'Justin Ford', 'Ellis Kelly']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 24,
-                    adjusted: undefined
-                },
+                score:24,
                 members: ['Conrad Norman', 'Benjamin Wheeler', 'Jane Doe']
             }
         }
@@ -631,20 +463,34 @@ var datas = [
         teams: {
             proposition: {
                 name: 'Proposition',
-                score: {
-                    original: 18,
-                    adjusted: undefined
-                },
+                score: 18,
                 members: ['Ellis Kelly', 'James Doe', 'John Doe']
             },
             opposition: {
                 name: 'Opposition',
-                score: {
-                    original: 16,
-                    adjusted: undefined
-                },
+                score: 16,
                 members: ['Jeannie Brown', 'Conrad Norman', 'Jane Doe']
             }
         }
     }
 ];
+
+
+
+var item = {
+    'Ellis Kelly': {
+        score: {
+            total: {
+                raw: {
+                    adjusted: []
+                },
+                calculated: {
+                    adjusted: 0,
+                    average: 0,
+                    formatted: 0,
+                    count: 0
+                }
+            }
+        }
+    }
+};
