@@ -20,6 +20,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
         <script src="../scripts-datas.js"></script>
+        <script src="../scripts-handlebars.js"></script>
         <script src="../scripts-functions.js"></script>
         <script src="../scripts-dom.js"></script>
     </head>
@@ -46,12 +47,12 @@
         <div class="col-12 ranking-row ranking-row-in">
             <div class="row">
                 <div class="col-6 ranking-row-name">
-                    <i class="ranking-row-performance fa fa-{{this.rank.performance.in.class}}"></i>
+                    <i class="ranking-row-performance fa fa-{{this.rank.performance.total.class}}"></i>
                     {{this.name}}
                 </div>
-                <div class="col-2 ranking-row-score">{{this.score.total.calculated.average.current}}</div>
-                <div class="col-2 ranking-row-score">{{this.score.total.calculated.adjusted.current}}</div>
-                <div class="col-2 ranking-row-score">{{this.score.total.raw.current.length}}</div>
+                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.average 100 '0.00'}}</div>
+                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
+                <div class="col-2 ranking-row-score">{{this.score.total.raw.length}}</div>
             </div>
         </div>
     {{/each}}
@@ -59,12 +60,12 @@
         <div class="col-12 ranking-row ranking-row-out">
             <div class="row">
                 <div class="col-6 ranking-row-name">
-                    <i class="ranking-row-performance fa fa-{{this.rank.performance.out.class}}"></i>
+                    <i class="ranking-row-performance fa fa-{{this.rank.performance.total.class}}"></i>
                     {{this.name}}
                 </div>
-                <div class="col-2 ranking-row-score">{{this.score.total.calculated.average.current}}</div>
-                <div class="col-2 ranking-row-score">{{this.score.total.calculated.adjusted.current}}</div>
-                <div class="col-2 ranking-row-score">{{this.score.total.raw.current.length}}</div>
+                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.average 100 '0.00'}}</div>
+                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
+                <div class="col-2 ranking-row-score">{{this.score.total.raw.length}}</div>
             </div>
         </div>
     {{/each}}

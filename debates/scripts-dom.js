@@ -1,60 +1,58 @@
 'use strict';
 
 $(document).ready(function() {
-    var members = computations.events.to.members.compute(events);
-
     var ranking = {
         current: {
-            in: _.sortBy(_.filter(members, function(m) {
-                return m.score.total.raw.current.length >= constants.participations.threshold;
-            }), function(m) {
-                return -1 * m.score.total.calculated.average.current;
-            }),
-            out: _.sortBy(_.filter(members, function(m) {
-                return m.score.total.raw.current.length < constants.participations.threshold;
-            }), function(m) {
-                return -1 * m.score.total.calculated.average.current;
-            })
+            members: computations.events.to.members.compute(events)
         },
         previous: {
-            in: _.sortBy(_.filter(members, function(m) {
-                return m.score.total.raw.previous.length >= constants.participations.threshold;
-            }), function(m) {
-                return -1 * m.score.total.calculated.average.previous;
-            }),
-            out: _.sortBy(_.filter(members, function(m) {
-                return m.score.total.raw.previous.length < constants.participations.threshold;
-            }), function(m) {
-                return -1 * m.score.total.calculated.average.previous;
-            })
+            members: computations.events.to.members.compute(_.slice(events, 0, events.length - 1))
         }
     };
 
-    _.each(ranking.current.in, function(m, i) {
-        members[m.name].rank.current.in = i;
+    ranking.current.in = _.sortBy(_.filter(ranking.current.members, function(m) {
+        return m.score.total.raw.length >= constants.participations.threshold;
+    }), function(m) {
+        return -1 * m.score.total.calculated.average;
     });
 
-    _.each(ranking.current.out, function(m, i) {
-        members[m.name].rank.current.out = i;
+    ranking.previous.in = _.sortBy(_.filter(ranking.previous.members, function(m) {
+        return m.score.total.raw.length >= constants.participations.threshold;
+    }), function(m) {
+        return -1 * m.score.total.calculated.average;
     });
 
-    _.each(ranking.previous.in, function(m, i) {
-        members[m.name].rank.previous.in = i;
-    });
-
-    _.each(ranking.previous.out, function(m, i) {
-        members[m.name].rank.previous.out = i;
-    });
-
-    _.each(members, function (m) {
-        m.rank.performance.in.class = computations.performance.classify({
-            current: m.rank.current.in,
-            previous: m.rank.previous.in
+    _.each(ranking.current.in, function(itemCurrent, indexCurrent) {
+        var indexPrevious = _.findIndex(ranking.previous.in, function(itemPrevious) {
+            return itemPrevious.name === itemCurrent.name;
         });
 
-        m.rank.performance.out.class = computations.performance.classify({
-            current: m.rank.current.out,
-            previous: m.rank.previous.out
+        itemCurrent.rank.performance.total.class = computations.performance.classify({
+            current: indexCurrent,
+            previous: indexPrevious
+        });
+    });
+
+    ranking.current.out = _.sortBy(_.filter(ranking.current.members, function(m) {
+        return m.score.total.raw.length < constants.participations.threshold;
+    }), function(m) {
+        return -1 * m.score.total.calculated.average;
+    });
+
+    ranking.previous.out = _.sortBy(_.filter(ranking.previous.members, function(m) {
+        return m.score.total.raw.length < constants.participations.threshold;
+    }), function(m) {
+        return -1 * m.score.total.calculated.average;
+    });
+
+    _.each(ranking.current.out, function(itemCurrent, indexCurrent) {
+        var indexPrevious = _.findIndex(ranking.previous.out, function(itemPrevious) {
+            return itemPrevious.name === itemCurrent.name;
+        });
+
+        itemCurrent.rank.performance.total.class = computations.performance.classify({
+            current: indexCurrent,
+            previous: indexPrevious
         });
     });
 
