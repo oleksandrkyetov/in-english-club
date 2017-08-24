@@ -1,75 +1,64 @@
 'use strict';
 
 $(document).ready(function() {
+    var members = computations.events.to.members.compute(events);
+
     var ranking = {
         current: {
-            all: _.map(computations.ranking.compute(datas), mappers.for.ranking)
+            in: _.sortBy(_.filter(members, function(m) {
+                return m.score.total.raw.current.length >= constants.participations.threshold;
+            }), function(m) {
+                return -1 * m.score.total.calculated.average.current;
+            }),
+            out: _.sortBy(_.filter(members, function(m) {
+                return m.score.total.raw.current.length < constants.participations.threshold;
+            }), function(m) {
+                return -1 * m.score.total.calculated.average.current;
+            })
         },
         previous: {
-            all: _.map(computations.ranking.compute(_.slice(datas, 0, datas.length - 1)), mappers.for.ranking)
+            in: _.sortBy(_.filter(members, function(m) {
+                return m.score.total.raw.previous.length >= constants.participations.threshold;
+            }), function(m) {
+                return -1 * m.score.total.calculated.average.previous;
+            }),
+            out: _.sortBy(_.filter(members, function(m) {
+                return m.score.total.raw.previous.length < constants.participations.threshold;
+            }), function(m) {
+                return -1 * m.score.total.calculated.average.previous;
+            })
         }
     };
 
-    ranking.current.in = _.sortBy(_.filter(ranking.current.all, function(item) {
-        return item.rank.total.count >= constants.participations.threshold;
-    }), function(item) {
-        return -1 * item.rank.total.score.average.raw;
+    _.each(ranking.current.in, function(m, i) {
+        members[m.name].rank.current.in = i;
     });
 
-    ranking.previous.in = _.sortBy(_.filter(ranking.previous.all, function(item) {
-        return item.rank.total.count >= constants.participations.threshold
-    }), function(item) {
-        return -1 * item.rank.total.score.average.raw;
+    _.each(ranking.current.out, function(m, i) {
+        members[m.name].rank.current.out = i;
     });
 
-    _.each(ranking.current.in, function(itemCurrent, indexCurrent) {
-        var indexPrevious = _.findIndex(ranking.previous.in, function(itemPrevious) {
-            return itemPrevious.name === itemCurrent.name;
+    _.each(ranking.previous.in, function(m, i) {
+        members[m.name].rank.previous.in = i;
+    });
+
+    _.each(ranking.previous.out, function(m, i) {
+        members[m.name].rank.previous.out = i;
+    });
+
+    _.each(members, function (m) {
+        m.rank.performance.in.class = computations.performance.classify({
+            current: m.rank.current.in,
+            previous: m.rank.previous.in
         });
 
-        itemCurrent.rank.total.performance = {
-            class: computations.performance.classify({
-                current: indexCurrent,
-                previous: indexPrevious
-            })
-        };
-    });
-
-    ranking.current.out = _.sortBy(_.filter(ranking.current.all, function(item) {
-        return item.rank.total.count < constants.participations.threshold
-    }), function(item) {
-        return -1 * item.rank.total.score.average.raw;
-    });
-
-    ranking.previous.out = _.sortBy(_.filter(ranking.previous.all, function(item) {
-        return item.rank.total.count < constants.participations.threshold
-    }), function(item) {
-        return -1 * item.rank.total.score.average.raw;
-    });
-
-    _.each(ranking.current.out, function(itemCurrent, indexCurrent) {
-        var indexPrevious = _.findIndex(ranking.previous.out, function(itemPrevious) {
-            return itemPrevious.name === itemCurrent.name;
+        m.rank.performance.out.class = computations.performance.classify({
+            current: m.rank.current.out,
+            previous: m.rank.previous.out
         });
-
-        itemCurrent.rank.total.performance = {
-            class: computations.performance.classify({
-                current: indexCurrent,
-                previous: indexPrevious
-            })
-        };
     });
 
     $('#ranking').html(Handlebars.compile($('#ranking-template').html())({
         ranking: ranking.current
     }));
-
-    // var events = [];
-    // _.each(datas, function(data) {
-    //     events.push(Handlebars.compile($('#australasia-event-template').html())({
-    //         teams: data.teams
-    //     }));
-    //     events.push(Handlebars.compile($('#british-parliamentary-event-template').html())({}));
-    // });
-    // $('#events').html(events);
 });

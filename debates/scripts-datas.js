@@ -1,6 +1,6 @@
 'use strict';
 
-var datas = [
+var events = [
     {
         date: '2017-02-18',
         style: 'British Parliamentary',
@@ -451,7 +451,7 @@ var datas = [
             },
             opposition: {
                 name: 'Opposition',
-                score:24,
+                score: 24,
                 members: ['Conrad Norman', 'Benjamin Wheeler', 'Jane Doe']
             }
         }
@@ -474,23 +474,3 @@ var datas = [
         }
     }
 ];
-
-
-
-var item = {
-    'Ellis Kelly': {
-        score: {
-            total: {
-                raw: {
-                    adjusted: []
-                },
-                calculated: {
-                    adjusted: 0,
-                    average: 0,
-                    formatted: 0,
-                    count: 0
-                }
-            }
-        }
-    }
-};
