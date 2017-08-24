@@ -100,6 +100,10 @@
     text-align: center;
 }
 
-.ranking-row-name, .ranking-row-performance, .ranking-row-score {
+.ranking-row-performance {
+    padding-right: 0.4rem;
+}
+
+.ranking-row-name, .ranking-row-score {
     padding: 0;
 }

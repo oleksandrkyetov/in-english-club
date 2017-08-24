@@ -1,140 +1,242 @@
 'use strict';
 
-var names = [
+var mappings = [
     {
-        real: 'Anastasiya Ivanova',
-        alias: 'Josefina Herrera'
+        name: 'Anastasiya Ivanova',
+        facebook: 'https://www.facebook.com/profile.php?id=100009763771785',
+        aliases: {
+            debates: 'Josefina Herrera'
+        }
     },
     {
-        real: 'Kateryna Zhurkina',
-        alias: 'Julia Castro'
+        name: 'Kateryna Zhurkina',
+        facebook: 'https://www.facebook.com/kateryna.zhurkina',
+        aliases: {
+            debates: 'Julia Castro'
+        }
     },
     {
-        real: 'Alexander Moshurovskiy',
-        alias: 'Ramon Willis'
+        name: 'Alexander Moshurovskiy',
+        facebook: 'https://www.facebook.com/alexander.moshurovskiy',
+        aliases: {
+            debates: 'Ramon Willis'
+        }
     },
     {
-        real: 'Oxana Ilyashenko',
-        alias: 'Sharon Fitzgerald'
+        name: 'Oxana Ilyashenko',
+        facebook: 'https://www.facebook.com/oxana.ilyashenko.5',
+        aliases: {
+            debates: 'Sharon Fitzgerald'
+        }
     },
     {
-        real: 'Станіслав Шитий',
-        alias: 'Benjamin Wheeler'
+        name: 'Станіслав Шитий',
+        facebook: 'https://www.facebook.com/profile.php?id=100001407672566',
+        aliases: {
+            debates: 'Benjamin Wheeler'
+        }
     },
     {
-        real: 'Yuriy Prus',
-        alias: 'Preston Logan'
+        name: 'Yuriy Prus',
+        facebook: 'https://www.facebook.com/profile.php?id=100009667143236',
+        aliases: {
+            debates: 'Preston Logan'
+        }
     },
     {
-        real: 'Alina Sergeevna',
-        alias: 'Myra Johnston'
+        name: 'Alina Sergeevna',
+        facebook: 'https://www.facebook.com/kojiudr',
+        aliases: {
+            debates: 'Myra Johnston'
+        }
     },
     {
-        real: 'Oksana Nechiporenko',
-        alias: 'Jeannie Brown'
+        name: 'Oksana Nechiporenko',
+        facebook: 'https://www.facebook.com/profile.php?id=100007935664711',
+        aliases: {
+            debates: 'Jeannie Brown'
+        }
     },
     {
-        real: 'Marina Yukhymets',
-        alias: 'Krista Poole'
+        name: 'Marina Yukhymets',
+        facebook: 'https://www.facebook.com/marina.yukhymets.5',
+        aliases: {
+            debates: 'Krista Poole'
+        }
     },
     {
-        real: 'Dmitry Golivets',
-        alias: 'Cory Salazar'
+        name: 'Dmitry Golivets',
+        facebook: 'https://www.facebook.com/dmitry.golivets',
+        aliases: {
+            debates: 'Cory Salazar'
+        }
     },
     {
-        real: 'Евгения Шиндер',
-        alias: 'Kristine Quinn'
+        name: 'Евгения Шиндер',
+        facebook: 'https://www.facebook.com/profile.php?id=100012452536549',
+        aliases: {
+            debates: 'Kristine Quinn'
+        }
     },
     {
-        real: 'Dmytro Petryk',
-        alias: 'Tommy Welch'
+        name: 'Dmytro Petryk',
+        facebook: 'https://www.facebook.com/dmytro.petryk',
+        aliases: {
+            debates: 'Tommy Welch'
+        }
     },
     {
-        real: 'Pavel Karnaukhov',
-        alias: 'Enrique Houston'
+        name: 'Pavel Karnaukhov',
+        facebook: 'https://www.facebook.com/pavel.karnaukhov.7',
+        aliases: {
+            debates: 'Enrique Houston'
+        }
     },
     {
-        real: 'Oleksandr Kyetov',
-        alias: 'Justin Ford'
+        name: 'Oleksandr Kyetov',
+        facebook: 'https://www.facebook.com/oleksandr.kyetov',
+        aliases: {
+            debates: 'Justin Ford'
+        }
     },
     {
-        real: 'Viktoriia Krykhno',
-        alias: 'Genevieve Simon'
+        name: 'Viktoriia Krykhno',
+        facebook: 'https://www.facebook.com/Krykhno',
+        aliases: {
+            debates: 'Genevieve Simon'
+        }
     },
     {
-        real: 'Olga Konyakhyna',
-        alias: 'Hannah Hubbard'
+        name: 'Olga Konyakhyna',
+        facebook: 'https://www.facebook.com/profile.php?id=100001760152990',
+        aliases: {
+            debates: 'Hannah Hubbard'
+        }
     },
     {
-        real: 'Volodymyr Walduk',
-        alias: 'Maurice Castro'
+        name: 'Volodymyr Walduk',
+        facebook: 'https://www.facebook.com/profile.php?id=100011405103774',
+        aliases: {
+            debates: 'Maurice Castro'
+        }
     },
     {
-        real: 'Julia Turkevich',
-        alias: 'Sharon Terry'
+        name: 'Julia Turkevich',
+        facebook: 'https://www.facebook.com/julia.turkevich.7',
+        aliases: {
+            debates: 'Sharon Terry'
+        }
     },
     {
-        real: 'Sergey Kochergan',
-        alias: 'Sidney Cross'
+        name: 'Sergey Kochergan',
+        facebook: 'https://www.facebook.com/sergey.kochergan',
+        aliases: {
+            debates: 'Sidney Cross'
+        }
     },
     {
-        real: 'Oleksandr Voitsekhovskyi',
-        alias: 'Ervin Peters'
+        name: 'Oleksandr Voitsekhovskyi',
+        facebook: 'https://www.facebook.com/AVoits',
+        aliases: {
+            debates: 'Ervin Peters'
+        }
     },
     {
-        real: 'Anastacia Sooltanova',
-        alias: 'April Aguilar'
+        name: 'Anastacia Sooltanova',
+        facebook: 'https://www.facebook.com/naska.sooltanova',
+        aliases: {
+            debates: 'April Aguilar'
+        }
     },
     {
-        real: 'Rob Godin',
-        alias: 'Russell Fields'
+        name: 'Rob Godin',
+        facebook: 'https://www.facebook.com/rob.godin.3',
+        aliases: {
+            debates: 'Russell Fields'
+        }
     },
     {
-        real: 'Sergey Kondratyuk',
-        alias: 'Ellis Kelly'
+        name: 'Sergey Kondratyuk',
+        facebook: 'https://www.facebook.com/sergey.kondratyuk.98',
+        aliases: {
+            debates: 'Ellis Kelly'
+        }
     },
     {
-        real: 'Фирас Бурзан',
-        alias: 'Conrad Norman'
+        name: 'Фирас Бурзан',
+        facebook: 'https://www.facebook.com/profile.php?id=100005372852025',
+        aliases: {
+            debates: 'Conrad Norman'
+        }
     },
     {
-        real: 'Katya Kirey',
-        alias: 'Sheryl Jimenez'
+        name: 'Katya Kirey',
+        facebook: 'https://www.facebook.com/katya.kirey.9',
+        aliases: {
+            debates: 'Sheryl Jimenez'
+        }
     },
     {
-        real: 'Jane Doe',
-        alias: 'Jane Doe'
+        name: 'Jane Doe',
+        facebook: undefined,
+        aliases: {
+            debates: 'Jane Doe'
+        }
     },
     {
-        real: 'James Doe',
-        alias: 'James Doe'
+        name: 'James Doe',
+        facebook: undefined,
+        aliases: {
+            debates: 'James Doe'
+        }
     },
     {
-        real: 'John Doe',
-        alias: 'John Doe'
+        name: 'John Doe',
+        facebook: undefined,
+        aliases: {
+            debates: 'John Doe'
+        }
     },
     {
-        real: 'Oleksii Malashyna',
-        alias: 'Austin Bates'
+        name: 'Oleksii Malashyna',
+        facebook: 'https://www.facebook.com/malashyna',
+        aliases: {
+            debates: 'Austin Bates'
+        }
     },
     {
-        real: 'Alona Malashyna',
-        alias: 'Ramona Moss'
+        name: 'Alona Malashyna',
+        facebook: 'https://www.facebook.com/alona.mordiuk',
+        aliases: {
+            debates: 'Ramona Moss'
+        }
     },
     {
-        real: 'Liliya Dmitrieva',
-        alias: 'Lorene Moody'
+        name: 'Liliya Dmitrieva',
+        facebook: 'https://www.facebook.com/liliya.dmitrieva',
+        aliases: {
+            debates: 'Lorene Moody'
+        }
     },
     {
-        real: 'Sasha Leshchenko',
-        alias: 'Juan Holmes'
+        name: 'Sasha Leshchenko',
+        facebook: 'https://www.facebook.com/olexle',
+        aliases: {
+            debates: 'Juan Holmes'
+        }
     },
     {
-        real: 'Mariia Korotkova',
-        alias: 'Claudia Frazier'
+        name: 'Mariia Korotkova',
+        facebook: 'https://www.facebook.com/maria.korotkova.984',
+        aliases: {
+            debates: 'Claudia Frazier'
+        }
     },
     {
-        real: 'Natalia Kornaeva',
-        alias: 'Pearl May'
+        name: 'Natalia Kornaeva',
+        facebook: 'https://www.facebook.com/natalia.kornaeva',
+        aliases: {
+            debates: 'Pearl May'
+        }
     }
 ];

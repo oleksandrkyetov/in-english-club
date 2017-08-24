@@ -1,5 +1,11 @@
 'use strict';
 
+var constants = {
+    participations: {
+        threshold: 5
+    }
+};
+
 var creators = {
     rank: {
         create: function () {
@@ -39,6 +45,12 @@ var computations = {
             computations.ranking.bp.compute(_.filter(datas, function(data) {
                 return data.style === 'British Parliamentary'
             }), ranking);
+
+            _.each(ranking, function(item) {
+                item.total.score.average = item.total.score.original / item.total.count;
+                item.proposition.score.average = item.proposition.score.original / item.proposition.count;
+                item.opposition.score.average = item.opposition.score.original / item.opposition.count;
+            });
 
             return ranking;
         },
@@ -127,6 +139,74 @@ var computations = {
                         ranking[name].opposition.score.original += data.teams.opposition.closing.score.adjusted;
                     });
                 });
+            }
+        }
+    },
+    performance: {
+        classify: function(index) {
+            if (index.previous === -1) {
+                return 'plus';
+            }
+
+            if (index.previous - index.current> 0) {
+                return 'arrow-up';
+            }
+
+            if (index.previous- index.current < 0) {
+                return 'arrow-down';
+            }
+
+            return 'minus';
+        }
+    }
+};
+
+var mappers = {
+    for: {
+        ranking: function (value, key) {
+            return {
+                name: key,
+                rank: {
+                    total: {
+                        count: value.total.count,
+                        score: {
+                            original: {
+                                raw: value.total.score.original,
+                                formatted: numeral(value.total.score.original * 100).format('0.00')
+                            },
+                            average: {
+                                raw: value.total.score.average,
+                                formatted: numeral(value.total.score.average * 100).format('0.00')
+                            }
+                        }
+                    },
+                    proposition: {
+                        count: value.proposition.count,
+                        score: {
+                            original: {
+                                raw: value.proposition.score.original,
+                                formatted: numeral(value.proposition.score.original * 100).format('0.00')
+                            },
+                            average: {
+                                raw: value.proposition.score.average,
+                                formatted: numeral(value.proposition.score.average * 100).format('0.00')
+                            }
+                        }
+                    },
+                    opposition: {
+                        count: value.opposition.count,
+                        score: {
+                            original: {
+                                raw: value.opposition.score.original,
+                                formatted: numeral(value.opposition.score.original * 100).format('0.00')
+                            },
+                            average: {
+                                raw: value.opposition.score.average,
+                                formatted: numeral(value.opposition.score.average * 100).format('0.00')
+                            }
+                        }
+                    }
+                }
             }
         }
     }

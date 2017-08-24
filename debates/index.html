@@ -8,6 +8,7 @@
 
         <link rel="shortcut icon" href="../debates.inenglish.logo.png" type="image/png" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="../styles.css" />
         <link rel="stylesheet" href="styles.css" />
 
@@ -16,10 +17,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
         <script src="scripts-datas.js"></script>
-        <script src="scripts-computation.js"></script>
+        <script src="scripts-functions.js"></script>
         <script src="scripts-dom.js"></script>
     </head>
     <body>
@@ -33,7 +34,10 @@
 <script id="ranking-template" type="text/x-handlebars-template">
     <div class="col-12 ranking-header">
         <div class="row">
-            <div class="col-6 ranking-row-name">Name</div>
+            <div class="col-6 ranking-row-name">
+                <i class="hidden ranking-row-performance fa fa-minus"></i>
+                Name
+            </div>
             <div class="col-2 ranking-row-score">Average</div>
             <div class="col-2 ranking-row-score">Total</div>
             <div class="col-2 ranking-row-score">Count</div>
@@ -42,7 +46,10 @@
     {{#each ranking.in}}
         <div class="col-12 ranking-row ranking-row-in">
             <div class="row">
-                <div class="col-6 ranking-row-name">{{this.name}}</div>
+                <div class="col-6 ranking-row-name">
+                    <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
+                    {{this.name}}
+                </div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
@@ -52,7 +59,10 @@
     {{#each ranking.out}}
         <div class="col-12 ranking-row ranking-row-out">
             <div class="row">
-                <div class="col-6 ranking-row-name">{{this.name}}</div>
+                <div class="col-6 ranking-row-name">
+                    <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
+                    {{this.name}}
+                </div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
                 <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
