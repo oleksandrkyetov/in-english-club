@@ -161,11 +161,11 @@ var computations = {
             }
 
             if (index.previous - index.current > 0) {
-                return 'arrow-up';
+                return 'chevron-up';
             }
 
             if (index.previous- index.current < 0) {
-                return 'arrow-down';
+                return 'chevron-down';
             }
 
             return 'minus';
@@ -173,13 +173,15 @@ var computations = {
     },
     score: {
         adjust: function(value) {
-            if (value > 1.1) {
-                return 1.1;
-            }
+            // TODO Not sure that we need it ...
 
-            if (value < 0.9) {
-                return 0.9
-            }
+            // if (value > 1.1) {
+            //     return 1.1;
+            // }
+            //
+            // if (value < 0.9) {
+            //     return 0.9
+            // }
 
             return value;
         }
