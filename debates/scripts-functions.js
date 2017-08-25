@@ -94,7 +94,7 @@ var computations = {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = event.teams.proposition.score / average;
+                            var adjusted = computations.score.adjust(event.teams.proposition.score / average);
                             members[m].score.total.raw.push(adjusted);
                             members[m].score.proposition.raw.push(adjusted);
                         });
@@ -103,7 +103,7 @@ var computations = {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = event.teams.opposition.score / average;
+                            var adjusted = computations.score.adjust(event.teams.opposition.score / average);
                             members[m].score.total.raw.push(adjusted);
                             members[m].score.opposition.raw.push(adjusted);
                         });
@@ -118,7 +118,7 @@ var computations = {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = event.teams.proposition.opening.score / average;
+                            var adjusted = computations.score.adjust(event.teams.proposition.opening.score / average);
                             members[m].score.total.raw.push(adjusted);
                             members[m].score.proposition.raw.push(adjusted);
                         });
@@ -127,7 +127,7 @@ var computations = {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = event.teams.proposition.closing.score / average;
+                            var adjusted = computations.score.adjust(event.teams.proposition.closing.score / average);
                             members[m].score.total.raw.push(adjusted);
                             members[m].score.proposition.raw.push(adjusted);
                         });
@@ -136,7 +136,7 @@ var computations = {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = event.teams.opposition.opening.score / average;
+                            var adjusted = computations.score.adjust(event.teams.opposition.opening.score / average);
                             members[m].score.total.raw.push(adjusted);
                             members[m].score.opposition.raw.push(adjusted);
                         });
@@ -145,7 +145,7 @@ var computations = {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = event.teams.opposition.closing.score / average;
+                            var adjusted = computations.score.adjust(event.teams.opposition.closing.score / average);
                             members[m].score.total.raw.push(adjusted);
                             members[m].score.opposition.raw.push(adjusted);
                         });
@@ -169,6 +169,19 @@ var computations = {
             }
 
             return 'minus';
+        }
+    },
+    score: {
+        adjust: function(value) {
+            if (value > 1.1) {
+                return 1.1;
+            }
+
+            if (value < 0.9) {
+                return 0.9
+            }
+
+            return value;
         }
     }
 };

@@ -101,6 +101,11 @@
     font-weight: 400;
 }
 
+.ranking {
+    background: url('../debates.inenglish.logo.transparent.png') no-repeat center;
+    background-size: contain;
+}
+
 .ranking-header {
     padding: 0;
     font-size: 0.9rem;
