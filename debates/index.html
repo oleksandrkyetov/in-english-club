@@ -23,53 +23,8 @@
         <script src="scripts-functions.js"></script>
         <script src="scripts-dom.js"></script>
     </head>
-    <body>
-        <div class="container-fluid container-fluid-centered">
-            <div class="row ranking" id="ranking"></div>
-                <!--<div class="row events" id="events"></div>-->
-        </div>
-    </body>
+    <body onload=window.location='ranking/'></body>
 </html>
-
-<script id="ranking-template" type="text/x-handlebars-template">
-    <div class="col-12 ranking-header">
-        <div class="row">
-            <div class="col-6 ranking-row-name">
-                <i class="hidden ranking-row-performance fa fa-minus"></i>
-                Name
-            </div>
-            <div class="col-2 ranking-row-score">Average</div>
-            <div class="col-2 ranking-row-score">Total</div>
-            <div class="col-2 ranking-row-score">Count</div>
-        </div>
-    </div>
-    {{#each ranking.in}}
-        <div class="col-12 ranking-row ranking-row-in">
-            <div class="row">
-                <div class="col-6 ranking-row-name">
-                    <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
-                    {{this.name}}
-                </div>
-                <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
-                <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
-                <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
-            </div>
-        </div>
-    {{/each}}
-    {{#each ranking.out}}
-        <div class="col-12 ranking-row ranking-row-out">
-            <div class="row">
-                <div class="col-6 ranking-row-name">
-                    <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
-                    {{this.name}}
-                </div>
-                <div class="col-2 ranking-row-score">{{this.rank.total.score.average.formatted}}</div>
-                <div class="col-2 ranking-row-score">{{this.rank.total.score.original.formatted}}</div>
-                <div class="col-2 ranking-row-score">{{this.rank.total.count}}</div>
-            </div>
-        </div>
-    {{/each}}
-</script>
 
 <!--<script id="australasia-event-template" type="text/x-handlebars-template">-->
     <!--<div class="event col-12 no-padding">-->
