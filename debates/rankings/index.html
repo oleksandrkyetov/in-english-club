@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Debates In English</title>
+        <title>Debates In English Ranking</title>
         <meta charset="utf-8" />
-        <meta name="description" content="Debates In English" />
+        <meta name="description" content="Debates In English Ranking" />
         <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
         <link rel="shortcut icon" href="../../debates.inenglish.logo.png" type="image/png" />
@@ -34,38 +34,56 @@
 <script id="ranking-template" type="text/x-handlebars-template">
     <div class="col-12 ranking-header">
         <div class="row">
-            <div class="col-6 ranking-row-name">
+            <div class="ranking-row-name">
                 <i class="hidden ranking-row-performance fa fa-minus"></i>
                 Name
             </div>
-            <div class="col-2 ranking-row-score">Average</div>
-            <div class="col-2 ranking-row-score">Total</div>
-            <div class="col-2 ranking-row-score">Count</div>
+            <div class="ranking-row-score-total-average">Avg</div>
+            <div class="ranking-row-score-total-adjusted">Points</div>
+            <div class="ranking-row-score-total-count">Count</div>
+            <div class="ranking-row-score-proposition-average">Avg (P)</div>
+            <div class="ranking-row-score-proposition-adjusted">Points (P)</div>
+            <div class="ranking-row-score-proposition-count">Count (O)</div>
+            <div class="ranking-row-score-opposition-average">Avg (O)</div>
+            <div class="ranking-row-score-opposition-adjusted">Points (O)</div>
+            <div class="ranking-row-score-opposition-count">Count (O)</div>
         </div>
     </div>
     {{#each ranking.in}}
         <div class="col-12 ranking-row ranking-row-in">
             <div class="row">
-                <div class="col-6 ranking-row-name">
+                <div class="ranking-row-name">
                     <i class="ranking-row-performance fa fa-{{this.rank.performance.total.class}}"></i>
                     {{this.name}}
                 </div>
-                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.average 100 '0.00'}}</div>
-                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
-                <div class="col-2 ranking-row-score">{{this.score.total.raw.length}}</div>
+                <div class="ranking-row-score-total-average">{{format this.score.total.calculated.average 100 '0.00'}}</div>
+                <div class="ranking-row-score-total-adjusted">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
+                <div class="ranking-row-score-total-count">{{this.score.total.raw.length}}</div>
+                <div class="ranking-row-score-proposition-average">{{format this.score.proposition.calculated.average 100 '0.00'}}</div>
+                <div class="ranking-row-score-proposition-adjusted">{{format this.score.proposition.calculated.adjusted 100 '0.00'}}</div>
+                <div class="ranking-row-score-proposition-count">{{this.score.proposition.raw.length}}</div>
+                <div class="ranking-row-score-opposition-average">{{format this.score.opposition.calculated.average 100 '0.00'}}</div>
+                <div class="ranking-row-score-opposition-adjusted">{{format this.score.opposition.calculated.adjusted 100 '0.00'}}</div>
+                <div class="ranking-row-score-opposition-count">{{this.score.opposition.raw.length}}</div>
             </div>
         </div>
     {{/each}}
     {{#each ranking.out}}
         <div class="col-12 ranking-row ranking-row-out">
             <div class="row">
-                <div class="col-6 ranking-row-name">
+                <div class="ranking-row-name">
                     <i class="ranking-row-performance fa fa-{{this.rank.performance.total.class}}"></i>
                     {{this.name}}
                 </div>
-                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.average 100 '0.00'}}</div>
-                <div class="col-2 ranking-row-score">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
-                <div class="col-2 ranking-row-score">{{this.score.total.raw.length}}</div>
+                <div class="ranking-row-score-total-average">{{format this.score.total.calculated.average 100 '0.00'}}</div>
+                <div class="ranking-row-score-total-adjusted">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
+                <div class="ranking-row-score-total-count">{{this.score.total.raw.length}}</div>
+                <div class="ranking-row-score-proposition-average">{{format this.score.proposition.calculated.average 100 '0.00'}}</div>
+                <div class="ranking-row-score-proposition-adjusted">{{format this.score.proposition.calculated.adjusted 100 '0.00'}}</div>
+                <div class="ranking-row-score-proposition-count">{{this.score.proposition.raw.length}}</div>
+                <div class="ranking-row-score-opposition-average">{{format this.score.opposition.calculated.average 100 '0.00'}}</div>
+                <div class="ranking-row-score-opposition-adjusted">{{format this.score.opposition.calculated.adjusted 100 '0.00'}}</div>
+                <div class="ranking-row-score-opposition-count">{{this.score.opposition.raw.length}}</div>
             </div>
         </div>
     {{/each}}
