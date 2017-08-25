@@ -54,7 +54,8 @@ var mappings = [
         name: 'Oksana Nechiporenko',
         facebook: 'https://www.facebook.com/profile.php?id=100007935664711',
         aliases: {
-            debates: 'Jeannie Brown'
+            debates: 'Jeannie Brown',
+            dixit: 'Jeannie Brown'
         }
     },
     {
