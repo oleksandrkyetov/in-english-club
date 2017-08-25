@@ -72,11 +72,11 @@
 }
 
 .event {
-    padding-bottom: 1rem
+    padding-bottom: 1em
 }
 
 .score {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .winner {
@@ -84,20 +84,20 @@
 }
 
 .team-titles {
-    line-height: 2.0rem;
+    line-height: 2.0em;
 }
 
 .team-title {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
 .team-members {
-    line-height: 1rem;
+    line-height: 1em;
 }
 
 .team-member {
-    font-size: 0.7rem;
+    font-size: 0.7em;
     font-weight: 400;
 }
 
@@ -111,27 +111,27 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../debates.inenglish.logo.png');
+    background-image: url('../dixit.inenglish.logo.png');
 }
 
 .ranking-header {
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     font-weight: 600;
-    line-height: 1.8rem;
+    line-height: 1.8em;
     white-space: nowrap;
 }
 
 .ranking-row {
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     font-weight: 400;
-    line-height: 1.6rem;
+    line-height: 1.6em;
     white-space: nowrap;
 }
 
 .ranking-header, .ranking-row {
-    padding: 0 0.4rem 0 0.4rem;
+    padding: 0 0.4em 0 0.4em;
 }
 
 .ranking-row-in {
@@ -143,7 +143,7 @@
 }
 
 .ranking-row-performance {
-    padding-right: 0.4rem;
+    padding-right: 0.4em;
 }
 
 .ranking-row-name {

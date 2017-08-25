@@ -1,5 +1,6 @@
 @media screen and (max-width: 639px) {
     .container-fluid-centered {
+        font-size: 16px;
         padding: 0 0 0 0;
     }
 
@@ -24,6 +25,7 @@
 
 @media screen and (min-width: 640px) and (max-width: 1279px) {
     .container-fluid-centered {
+        font-size: 20px;
         padding: 0 5% 0 5%;
     }
 
@@ -47,6 +49,7 @@
 
 @media screen and (min-width: 1280px) {
     .container-fluid-centered {
+        font-size: 24px;
         padding: 0 10% 0 10%;
     }
 
@@ -71,35 +74,35 @@
     padding: 0;
 }
 
-.event {
-    padding-bottom: 1rem
-}
+/*.event {*/
+    /*padding-bottom: 1em*/
+/*}*/
 
-.score {
-    font-size: 1.2rem;
-}
+/*.score {*/
+    /*font-size: 1.2em;*/
+/*}*/
 
-.winner {
-    color: #0d47a1;
-}
+/*.winner {*/
+    /*color: #0d47a1;*/
+/*}*/
 
-.team-titles {
-    line-height: 2.0rem;
-}
+/*.team-titles {*/
+    /*line-height: 2.0em;*/
+/*}*/
 
-.team-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-}
+/*.team-title {*/
+    /*font-size: 1.1em;*/
+    /*font-weight: 600;*/
+/*}*/
 
-.team-members {
-    line-height: 1rem;
-}
+/*.team-members {*/
+    /*line-height: 1em;*/
+/*}*/
 
-.team-member {
-    font-size: 0.7rem;
-    font-weight: 400;
-}
+/*.team-member {*/
+    /*font-size: 0.7em;*/
+    /*font-weight: 400;*/
+/*}*/
 
 .background {
     top: 0;
@@ -116,22 +119,22 @@
 
 .ranking-header {
     padding: 0;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 600;
-    line-height: 3.2rem;
+    line-height: 2.4em;
     white-space: nowrap;
 }
 
 .ranking-row {
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     font-weight: 400;
-    line-height: 1.6rem;
+    line-height: 2em;
     white-space: nowrap;
 }
 
 .ranking-header, .ranking-row {
-    padding: 0 0.4rem 0 0.4rem;
+    padding: 0 0.4em 0 0.4em;
 }
 
 .ranking-row-in {
@@ -143,7 +146,7 @@
 }
 
 .ranking-row-performance {
-    padding-right: 0.4rem;
+    padding-right: 0.4em;
 }
 
 .ranking-row-name {

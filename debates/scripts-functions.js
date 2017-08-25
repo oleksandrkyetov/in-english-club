@@ -3,6 +3,11 @@
 var constants = {
     participations: {
         threshold: 5
+    },
+    points: {
+        winner: 3,
+        draw: 2,
+        loser: 1
     }
 };
 
@@ -56,11 +61,10 @@ var creators = {
 var computations = {
     resolver: {
         for: function(style) {
-            if (style === 'Australasia') {
-                return computations.events.to.members.australasia;
-            }
-
-            return computations.events.to.members.bp;
+            return {
+                'Australasia': computations.events.to.members.australasia,
+                'British Parliamentary': computations.events.to.members.bp
+            }[style];
         }
     },
     events: {

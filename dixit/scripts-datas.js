@@ -4,39 +4,39 @@ var events = [
     {
         date: '2017-08-15',
         type: 'Dixit',
-        players: ['Jeannie Brown', 'X1', 'X2', 'X3', 'X4', 'X5'],
+        players: ['Jeannie Brown', 'Josefina Herrera', 'Julia Castro', 'Ramon Willis', 'Sharon Fitzgerald', 'Benjamin Wheeler'],
         game: [
             {
                 storyteller: 'Jeannie Brown',
-                gains: {'Jeannie Brown': 2, 'X1': 1, 'X2': 2, 'X3': 0, 'X4': 1, 'X5': 0}
+                gains: {'Jeannie Brown': 2, 'Josefina Herrera': 1, 'Julia Castro': 2, 'Ramon Willis': 0, 'Sharon Fitzgerald': 1, 'Benjamin Wheeler': 0}
             },
             {
-                storyteller: 'X1',
-                gains: {'Jeannie Brown': 1, 'X1': 2, 'X2': 2, 'X3': 1, 'X4': 0, 'X5': 2}
+                storyteller: 'Josefina Herrera',
+                gains: {'Jeannie Brown': 1, 'Josefina Herrera': 2, 'Julia Castro': 2, 'Ramon Willis': 1, 'Sharon Fitzgerald': 0, 'Benjamin Wheeler': 2}
             },
             {
-                storyteller: 'X2',
-                gains: {'Jeannie Brown': 1, 'X1': 0, 'X2': 2, 'X3': 0, 'X4': 0, 'X5': 1}
+                storyteller: 'Julia Castro',
+                gains: {'Jeannie Brown': 1, 'Josefina Herrera': 0, 'Julia Castro': 2, 'Ramon Willis': 0, 'Sharon Fitzgerald': 0, 'Benjamin Wheeler': 1}
             },
             {
-                storyteller: 'X3',
-                gains: {'Jeannie Brown': 3, 'X1': 1, 'X2': 0, 'X3': 2, 'X4': 1, 'X5': 0}
+                storyteller: 'Ramon Willis',
+                gains: {'Jeannie Brown': 3, 'Josefina Herrera': 1, 'Julia Castro': 0, 'Ramon Willis': 2, 'Sharon Fitzgerald': 1, 'Benjamin Wheeler': 0}
             },
             {
-                storyteller: 'X4',
-                gains: {'Jeannie Brown': 0, 'X1': 2, 'X2': 1, 'X3': 3, 'X4': 1, 'X5': 3}
+                storyteller: 'Sharon Fitzgerald',
+                gains: {'Jeannie Brown': 0, 'Josefina Herrera': 2, 'Julia Castro': 1, 'Ramon Willis': 3, 'Sharon Fitzgerald': 1, 'Benjamin Wheeler': 3}
             },
             {
-                storyteller: 'X5',
-                gains: {'Jeannie Brown': 1, 'X1': 2, 'X2': 3, 'X3': 0, 'X4': 2, 'X5': 2}
+                storyteller: 'Benjamin Wheeler',
+                gains: {'Jeannie Brown': 1, 'Josefina Herrera': 2, 'Julia Castro': 3, 'Ramon Willis': 0, 'Sharon Fitzgerald': 2, 'Benjamin Wheeler': 2}
             },
             {
                 storyteller: 'Jeannie Brown',
-                gains: {'Jeannie Brown': 0, 'X1': 3, 'X2': 1, 'X3': 1, 'X4': 1, 'X5': 1}
+                gains: {'Jeannie Brown': 0, 'Josefina Herrera': 3, 'Julia Castro': 1, 'Ramon Willis': 1, 'Sharon Fitzgerald': 1, 'Benjamin Wheeler': 1}
             },
             {
-                storyteller: 'X1',
-                gains: {'Jeannie Brown': 0, 'X1': 1, 'X2': 0, 'X3': 2, 'X4': 0, 'X5': 0}
+                storyteller: 'Josefina Herrera',
+                gains: {'Jeannie Brown': 0, 'Josefina Herrera': 1, 'Julia Castro': 0, 'Ramon Willis': 2, 'Sharon Fitzgerald': 0, 'Benjamin Wheeler': 0}
             }
         ]
     }
