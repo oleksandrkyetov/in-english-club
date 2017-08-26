@@ -39,7 +39,7 @@ var events = [
     {
         date: '2017-02-25',
         style: 'Australasia',
-        topic: 'This House believes that one night stand is unethical',
+        topic: 'This House believes\nthat one night stand\nis unethical',
         teams: {
             proposition: {
                 name: 'Proposition',

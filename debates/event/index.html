@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Debates In English Event</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Debates In English Event" />
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+        <link rel="shortcut icon" href="../../debates.inenglish.logo.png" type="image/png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../../styles.css" />
+        <link rel="stylesheet" href="../styles.css" />
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+        <script src="../../scripts-handlebars.js"></script>
+        <script src="../scripts-datas.js"></script>
+        <script src="../scripts-functions.js"></script>
+        <script src="scripts-dom.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid container-fluid-centered">
+            <div class="row event" id="event"></div>
+            <div class="logo-background"></div>
+        </div>
+    </body>
+</html>
+
+<script id="australasia-event-template" type="text/x-handlebars-template">
+    <div class="col-12 event-header">
+        <div class="row">
+            <div class="col-12 event-header-topic">{{event.topic}}</div>
+        </div>
+        <div class="row">
+            <div class="col-5 event-header-team pull-text-right">
+                <span>{{event.teams.proposition.name}}</span>
+            </div>
+            <div class="col-2 event-header-score">
+                <span class="pull-left">{{event.teams.proposition.score}}</span>
+                <span class="pull-right">{{event.teams.opposition.score}}</span>
+            </div>
+            <div class="col-5 event-header-team pull-text-left">
+                <span>{{event.teams.opposition.name}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 event-row">
+        <div class="row">
+            <div class="col-5 event-row-team-members pull-text-right">
+                {{#each event.teams.proposition.members}}
+                <div>{{this}}</div>
+                {{/each}}
+            </div>
+            <div class="col-2 no-padding"></div>
+            <div class="col-5 event-row-team-members pull-text-left">
+                {{#each event.teams.opposition.members}}
+                <div>{{this}}</div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--<script id="british-parliamentary-event-template" type="text/x-handlebars-template">-->
+    <!--<div class="event col-6 no-padding">-->
+        <!--<div class="row team-titles">-->
+            <!--<div class="col-5 pull-text-right">-->
+                <!--<span class="team-title">Proposition</span>-->
+            <!--</div>-->
+            <!--<div class="col-2 no-padding">-->
+                <!--<span class="pull-left score">23</span>-->
+                <!--<span class="pull-right score">17</span>-->
+            <!--</div>-->
+            <!--<div class="col-5 pull-text-left">-->
+                <!--<span class="team-title">Opposition</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row team-members">-->
+            <!--<div class="col-5 pull-text-right">-->
+                <!--<span class="team-member">Member 1</span>-->
+            <!--</div>-->
+            <!--<div class="col-2"></div>-->
+            <!--<div class="col-5 pull-text-left">-->
+                <!--<span class="team-member">Member 2</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</script>-->
