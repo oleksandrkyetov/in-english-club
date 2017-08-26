@@ -513,7 +513,7 @@ var events = [
         }
     },
     {
-        date: '2017-08-09',
+        date: '2017-08-19',
         style: 'Australasia',
         topic: 'This House believes that diversity at comapnies should be maintained at any cost',
         teams: {
@@ -528,6 +528,25 @@ var events = [
                 score: 16,
                 point: undefined,
                 members: ['Jeannie Brown', 'Conrad Norman', 'Jane Doe']
+            }
+        }
+    },
+    {
+        date: '2017-08-26',
+        style: 'Australasia',
+        topic: 'This House believes that romantic relationships at work should be prohibited',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 27,
+                point: undefined,
+                members: ['Maurice Castro', 'Katrina Phillips', 'April Aguilar']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 23,
+                point: undefined,
+                members: ['Conrad Norman', 'Enrique Houston', 'Justin Ford']
             }
         }
     }

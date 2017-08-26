@@ -239,5 +239,12 @@ var mappings = [
         aliases: {
             debates: 'Pearl May'
         }
+    },
+    {
+        name: 'Iryna Kraichyk',
+        facebook: 'https://www.facebook.com/profile.php?id=100006877245919',
+        aliases: {
+            debates: 'Katrina Phillips'
+        }
     }
 ];
