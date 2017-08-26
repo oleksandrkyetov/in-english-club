@@ -101,7 +101,7 @@ var preparators = {
     events: {
         points: {
             prepare: function(events) {
-                _.each(events, function (e) {
+                _.each(events, function(e) {
                     preparators.event.points.prepare(e);
                 });
             }

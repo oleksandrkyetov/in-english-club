@@ -10,11 +10,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 16,
+                    point: undefined,
                     members: ['Josefina Herrera', 'Hannah Hubbard']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 17,
+                    point: undefined,
                     members: ['Enrique Houston', 'Krista Poole']
                 }
             },
@@ -22,11 +24,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 18,
+                    point: undefined,
                     members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 17,
+                    point: undefined,
                     members: ['Cory Salazar', 'April Aguilar']
                 }
             }
@@ -40,11 +44,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 34,
+                point: undefined,
                 members: ['Josefina Herrera', 'Julia Castro', 'Ramon Willis']
             },
             opposition: {
                 name: 'Opposition',
                 score: 21,
+                point: undefined,
                 members: ['Sharon Fitzgerald', 'Benjamin Wheeler', 'Preston Logan']
             }
         }
@@ -58,11 +64,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 21,
+                    point: undefined,
                     members: ['Josefina Herrera', 'Ramon Willis']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 18,
+                    point: undefined,
                     members: ['Jeannie Brown', 'Benjamin Wheeler']
                 }
             },
@@ -70,11 +78,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 19,
+                    point: undefined,
                     members: ['Cory Salazar', 'Enrique Houston']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 23,
+                    point: undefined,
                     members: ['Sharon Terry', 'Tommy Welch']
                 }
             }
@@ -88,11 +98,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 44,
+                point: undefined,
                 members: ['Benjamin Wheeler', 'Ramon Willis', 'Myra Johnston']
             },
             opposition: {
                 name: 'Opposition',
                 score: 43,
+                point: undefined,
                 members: ['Jeannie Brown', 'Krista Poole', 'Cory Salazar']
             }
         }
@@ -106,11 +118,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 22,
+                    point: undefined,
                     members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 24,
+                    point: undefined,
                     members: ['Jeannie Brown', 'Austin Bates']
                 }
             },
@@ -118,11 +132,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 16,
+                    point: undefined,
                     members: ['Enrique Houston', 'Ramona Moss']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 21,
+                    point: undefined,
                     members: ['Josefina Herrera', 'Lorene Moody']
                 }
             }
@@ -136,11 +152,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 33,
+                point: undefined,
                 members: ['Jeannie Brown', 'Krista Poole', 'Kristine Quinn']
             },
             opposition: {
                 name: 'Opposition',
                 score: 37,
+                point: undefined,
                 members: ['Tommy Welch', 'Enrique Houston', 'Justin Ford']
             }
         }
@@ -154,11 +172,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 24,
+                    point: undefined,
                     members: ['Cory Salazar', 'Genevieve Simon']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 18,
+                    point: undefined,
                     members: ['Austin Bates', 'Jeannie Brown']
                 }
             },
@@ -166,11 +186,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 22,
+                    point: undefined,
                     members: ['Enrique Houston', 'Tommy Welch']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 22,
+                    point: undefined,
                     members: ['Ramona Moss', 'Sharon Terry']
                 }
             }
@@ -184,11 +206,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 35,
+                point: undefined,
                 members: ['Ramon Willis', 'Genevieve Simon', 'Krista Poole']
             },
             opposition: {
                 name: 'Opposition',
                 score: 35,
+                point: undefined,
                 members: ['Jeannie Brown', 'Hannah Hubbard', 'Maurice Castro']
             }
         }
@@ -202,11 +226,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 35,
+                    point: undefined,
                     members: ['Tommy Welch', 'Jeannie Brown']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 25,
+                    point: undefined,
                     members: ['Krista Poole', 'Hannah Hubbard']
                 }
             },
@@ -214,11 +240,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 33,
+                    point: undefined,
                     members: ['Enrique Houston', 'Josefina Herrera']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 38,
+                    point: undefined,
                     members: ['Cory Salazar', 'Benjamin Wheeler']
                 }
             }
@@ -232,11 +260,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 54,
+                point: undefined,
                 members: ['Ramon Willis', 'Cory Salazar', 'Jeannie Brown']
             },
             opposition: {
                 name: 'Opposition',
                 score: 46,
+                point: undefined,
                 members: ['Genevieve Simon', 'Krista Poole', 'Enrique Houston']
             }
         }
@@ -249,11 +279,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 59,
+                point: undefined,
                 members: ['Enrique Houston', 'Maurice Castro', 'Josefina Herrera']
             },
             opposition: {
                 name: 'Opposition',
                 score: 66,
+                point: undefined,
                 members: ['Krista Poole', 'Jeannie Brown', 'Sharon Terry']
             }
         }
@@ -266,11 +298,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 55,
+                point: undefined,
                 members: ['Ramon Willis', 'Julia Castro', 'Tommy Welch']
             },
             opposition: {
                 name: 'Opposition',
                 score: 42,
+                point: undefined,
                 members: ['Jeannie Brown', 'Krista Poole', 'Sidney Cross']
             }
         }
@@ -283,11 +317,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 52,
+                point: undefined,
                 members: ['Josefina Herrera', 'Enrique Houston', 'Ervin Peters']
             },
             opposition: {
                 name: 'Opposition',
                 score: 64,
+                point: undefined,
                 members: ['Jeannie Brown', 'Krista Poole', 'April Aguilar']
             }
         }
@@ -300,11 +336,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 57,
+                point: undefined,
                 members: ['Sharon Fitzgerald', 'Josefina Herrera', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
                 score: 73,
+                point: undefined,
                 members: ['Jeannie Brown', 'Enrique Houston', 'Cory Salazar']
             }
         }
@@ -317,11 +355,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 30,
+                point: undefined,
                 members: ['Russell Fields', 'Ellis Kelly', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
                 score: 36,
+                point: undefined,
                 members: ['Ramon Willis', 'Tommy Welch', 'Cory Salazar']
             }
         }
@@ -334,11 +374,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 45,
+                point: undefined,
                 members: ['Benjamin Wheeler', 'Ramon Willis', 'Enrique Houston']
             },
             opposition: {
                 name: 'Opposition',
                 score: 49,
+                point: undefined,
                 members: ['Jeannie Brown', 'Krista Poole', 'Ellis Kelly']
             }
         }
@@ -351,11 +393,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 42,
+                point: undefined,
                 members: ['Benjamin Wheeler', 'Hannah Hubbard', 'Ellis Kelly']
             },
             opposition: {
                 name: 'Opposition',
                 score: 48,
+                point: undefined,
                 members: ['Conrad Norman', 'Enrique Houston', 'Jeannie Brown']
             }
         }
@@ -369,11 +413,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 22,
+                    point: undefined,
                     members: ['Conrad Norman', 'Ellis Kelly']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 26,
+                    point: undefined,
                     members: ['Enrique Houston', 'Juan Holmes']
                 }
             },
@@ -381,11 +427,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 29,
+                    point: undefined,
                     members: ['April Aguilar', 'Cory Salazar']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 27,
+                    point: undefined,
                     members: ['Tommy Welch', 'Claudia Frazier']
                 }
             }
@@ -399,11 +447,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 34,
+                point: undefined,
                 members: ['Conrad Norman', 'Ramon Willis', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
                 score: 31,
+                point: undefined,
                 members: ['Ellis Kelly', 'Enrique Houston', 'Sheryl Jimenez']
             }
         }
@@ -417,11 +467,13 @@ var events = [
                 opening: {
                     name: 'Opening Proposition',
                     score: 11,
+                    point: undefined,
                     members: ['April Aguilar', 'Pearl May']
                 },
                 closing: {
                     name: 'Closing Proposition',
                     score: 18,
+                    point: undefined,
                     members: ['Ramon Willis', 'Sheryl Jimenez']
                 }
             },
@@ -429,11 +481,13 @@ var events = [
                 opening: {
                     name: 'Opening Opposition',
                     score: 24,
+                    point: undefined,
                     members: ['Jeannie Brown', 'Enrique Houston']
                 },
                 closing: {
                     name: 'Closing Opposition',
                     score: 30,
+                    point: undefined,
                     members: ['Tommy Welch', 'Josefina Herrera']
                 }
             }
@@ -447,11 +501,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 24,
+                point: undefined,
                 members: ['Enrique Houston', 'Justin Ford', 'Ellis Kelly']
             },
             opposition: {
                 name: 'Opposition',
                 score: 24,
+                point: undefined,
                 members: ['Conrad Norman', 'Benjamin Wheeler', 'Jane Doe']
             }
         }
@@ -464,11 +520,13 @@ var events = [
             proposition: {
                 name: 'Proposition',
                 score: 18,
+                point: undefined,
                 members: ['Ellis Kelly', 'James Doe', 'John Doe']
             },
             opposition: {
                 name: 'Opposition',
                 score: 16,
+                point: undefined,
                 members: ['Jeannie Brown', 'Conrad Norman', 'Jane Doe']
             }
         }

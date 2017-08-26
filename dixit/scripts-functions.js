@@ -20,14 +20,14 @@ var computations = {
     events: {
         to: {
             members: {
-                compute: function (events) {
+                compute: function(events) {
                     var members = {};
 
-                    _.each(events, function (e) {
+                    _.each(events, function(e) {
                         computations.resolver.for(e.type).compute(members, e);
                     });
 
-                    // _.each(members, function (m) {
+                    // _.each(members, function(m) {
                     //     m.score.total.calculated.adjusted = _.sum(m.score.total.raw);
                     //     m.score.total.calculated.average = m.score.total.calculated.adjusted / m.score.total.raw.length;
                     //
@@ -42,6 +42,8 @@ var computations = {
                 },
                 dixit: {
                     compute: function(events) {
+                        var players = [];
+
                         console.log('dixit');
                     },
                     odyssey: {

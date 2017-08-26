@@ -1,22 +1,33 @@
 @media screen and (max-width: 639px) {
     .container-fluid-centered {
+        font-size: 16px;
         padding: 0 0 0 0;
+    }
+
+    .ranking-header {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    .ranking-row {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
     }
 
     .ranking-row-name {
         width: 40%;
     }
 
-    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
+    .ranking-row-total-average {
         width: 20%;
     }
 
-    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
+    .ranking-row-total-adjusted {
         width: 10%;
         display: none;
     }
 
-    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
+    .ranking-row-total-count {
         width: 10%;
         display: none;
     }
@@ -24,81 +35,73 @@
 
 @media screen and (min-width: 640px) and (max-width: 1279px) {
     .container-fluid-centered {
+        font-size: 20px;
         padding: 0 5% 0 5%;
+    }
+
+    .ranking-header {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+
+    .ranking-row {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
     }
 
     .ranking-row-name {
         width: 25%;
     }
 
-    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
+    .ranking-row-total-average {
         width: 15%;
     }
 
-    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
+    .ranking-row-total-adjusted {
         width: 10%;
         display: none;
     }
 
-    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
+    .ranking-row-total-count {
         width: 10%;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .container-fluid-centered {
+        font-size: 24px;
         padding: 0 10% 0 10%;
+    }
+
+    .ranking-header {
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+
+    .ranking-row {
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
     }
 
     .ranking-row-name {
         width: 25%;
     }
 
-    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
+    .ranking-row-total-average {
         width: 10%;
     }
 
-    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
+    .ranking-row-total-adjusted {
         width: 10%;
     }
 
-    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
+    .ranking-row-total-count {
         width: 5%;
     }
 }
 
 .events, .ranking {
     padding: 0;
-}
-
-.event {
-    padding-bottom: 1em
-}
-
-.score {
-    font-size: 1.2em;
-}
-
-.winner {
-    color: #0d47a1;
-}
-
-.team-titles {
-    line-height: 2.0em;
-}
-
-.team-title {
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-.team-members {
-    line-height: 1em;
-}
-
-.team-member {
-    font-size: 0.7em;
-    font-weight: 400;
 }
 
 .background {
@@ -115,23 +118,19 @@
 }
 
 .ranking-header {
-    padding: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 600;
-    line-height: 1.8em;
     white-space: nowrap;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 
 .ranking-row {
-    padding: 0;
     font-size: 0.8em;
     font-weight: 400;
-    line-height: 1.6em;
     white-space: nowrap;
-}
-
-.ranking-header, .ranking-row {
-    padding: 0 0.4em 0 0.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 
 .ranking-row-in {
@@ -151,16 +150,6 @@
 }
 
 .ranking-row-total-average, .ranking-row-total-adjusted, .ranking-row-total-count {
-    text-align: center;
-    padding: 0;
-}
-
-.ranking-row-proposition-average, .ranking-row-proposition-adjusted, .ranking-row-proposition-count {
-    text-align: center;
-    padding: 0;
-}
-
-.ranking-row-opposition-average, .ranking-row-opposition-adjusted, .ranking-row-opposition-count {
     text-align: center;
     padding: 0;
 }

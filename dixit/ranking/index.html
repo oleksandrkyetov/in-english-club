@@ -42,12 +42,6 @@
             <div class="ranking-row-score-total-average">Avg</div>
             <div class="ranking-row-score-total-adjusted">Pts</div>
             <div class="ranking-row-score-total-count">Cnt</div>
-            <div class="ranking-row-score-proposition-average">Avg (P)</div>
-            <div class="ranking-row-score-proposition-adjusted">Pts (P)</div>
-            <div class="ranking-row-score-proposition-count">Cnt (P)</div>
-            <div class="ranking-row-score-opposition-average">Avg (O)</div>
-            <div class="ranking-row-score-opposition-adjusted">Pts (O)</div>
-            <div class="ranking-row-score-opposition-count">Cnt (O)</div>
         </div>
     </div>
     {{#each ranking.in}}
@@ -60,12 +54,6 @@
                 <div class="ranking-row-score-total-average">{{format this.score.total.calculated.average 100 '0.00'}}</div>
                 <div class="ranking-row-score-total-adjusted">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
                 <div class="ranking-row-score-total-count">{{this.score.total.raw.length}}</div>
-                <div class="ranking-row-score-proposition-average">{{format this.score.proposition.calculated.average 100 '0.00'}}</div>
-                <div class="ranking-row-score-proposition-adjusted">{{format this.score.proposition.calculated.adjusted 100 '0.00'}}</div>
-                <div class="ranking-row-score-proposition-count">{{this.score.proposition.raw.length}}</div>
-                <div class="ranking-row-score-opposition-average">{{format this.score.opposition.calculated.average 100 '0.00'}}</div>
-                <div class="ranking-row-score-opposition-adjusted">{{format this.score.opposition.calculated.adjusted 100 '0.00'}}</div>
-                <div class="ranking-row-score-opposition-count">{{this.score.opposition.raw.length}}</div>
             </div>
         </div>
     {{/each}}
@@ -79,12 +67,6 @@
                 <div class="ranking-row-score-total-average">{{format this.score.total.calculated.average 100 '0.00'}}</div>
                 <div class="ranking-row-score-total-adjusted">{{format this.score.total.calculated.adjusted 100 '0.00'}}</div>
                 <div class="ranking-row-score-total-count">{{this.score.total.raw.length}}</div>
-                <div class="ranking-row-score-proposition-average">{{format this.score.proposition.calculated.average 100 '0.00'}}</div>
-                <div class="ranking-row-score-proposition-adjusted">{{format this.score.proposition.calculated.adjusted 100 '0.00'}}</div>
-                <div class="ranking-row-score-proposition-count">{{this.score.proposition.raw.length}}</div>
-                <div class="ranking-row-score-opposition-average">{{format this.score.opposition.calculated.average 100 '0.00'}}</div>
-                <div class="ranking-row-score-opposition-adjusted">{{format this.score.opposition.calculated.adjusted 100 '0.00'}}</div>
-                <div class="ranking-row-score-opposition-count">{{this.score.opposition.raw.length}}</div>
             </div>
         </div>
     {{/each}}
