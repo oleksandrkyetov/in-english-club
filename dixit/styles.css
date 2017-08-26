@@ -7,16 +7,16 @@
         width: 40%;
     }
 
-    .ranking-row-score-total-average, .ranking-row-score-proposition-average, .ranking-row-score-opposition-average {
+    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
         width: 20%;
     }
 
-    .ranking-row-score-total-adjusted, .ranking-row-score-proposition-adjusted, .ranking-row-score-opposition-adjusted {
+    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
         width: 10%;
         display: none;
     }
 
-    .ranking-row-score-total-count, .ranking-row-score-proposition-count, .ranking-row-score-opposition-count {
+    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
         width: 10%;
         display: none;
     }
@@ -31,16 +31,16 @@
         width: 25%;
     }
 
-    .ranking-row-score-total-average, .ranking-row-score-proposition-average, .ranking-row-score-opposition-average {
+    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
         width: 15%;
     }
 
-    .ranking-row-score-total-adjusted, .ranking-row-score-proposition-adjusted, .ranking-row-score-opposition-adjusted {
+    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
         width: 10%;
         display: none;
     }
 
-    .ranking-row-score-total-count, .ranking-row-score-proposition-count, .ranking-row-score-opposition-count {
+    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
         width: 10%;
     }
 }
@@ -54,15 +54,15 @@
         width: 25%;
     }
 
-    .ranking-row-score-total-average, .ranking-row-score-proposition-average, .ranking-row-score-opposition-average {
+    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
         width: 10%;
     }
 
-    .ranking-row-score-total-adjusted, .ranking-row-score-proposition-adjusted, .ranking-row-score-opposition-adjusted {
+    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
         width: 10%;
     }
 
-    .ranking-row-score-total-count, .ranking-row-score-proposition-count, .ranking-row-score-opposition-count {
+    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
         width: 5%;
     }
 }
@@ -150,17 +150,17 @@
     padding: 0;
 }
 
-.ranking-row-score-total-average, .ranking-row-score-total-adjusted, .ranking-row-score-total-count {
+.ranking-row-total-average, .ranking-row-total-adjusted, .ranking-row-total-count {
     text-align: center;
     padding: 0;
 }
 
-.ranking-row-score-proposition-average, .ranking-row-score-proposition-adjusted, .ranking-row-score-proposition-count {
+.ranking-row-proposition-average, .ranking-row-proposition-adjusted, .ranking-row-proposition-count {
     text-align: center;
     padding: 0;
 }
 
-.ranking-row-score-opposition-average, .ranking-row-score-opposition-adjusted, .ranking-row-score-opposition-count {
+.ranking-row-opposition-average, .ranking-row-opposition-adjusted, .ranking-row-opposition-count {
     text-align: center;
     padding: 0;
 }

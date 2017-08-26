@@ -5,9 +5,9 @@ var constants = {
         threshold: 5
     },
     points: {
-        winner: 3,
+        win: 3,
         draw: 2,
-        loser: 1
+        lose: 1
     }
 };
 
@@ -24,31 +24,42 @@ var creators = {
             return {
                 name: '',
                 rank: {
-                    performance: {
-                        total: {
-                            class: undefined
-                        }
-                    }
-                },
-                score: {
                     total: {
-                        raw: [],
-                        calculated: {
-                            adjusted: undefined,
+                        score: {
+                            values: [],
+                            sum: undefined,
                             average: undefined
+                        },
+                        point: {
+                            values: [],
+                            sum: undefined,
+                            average: undefined
+                        },
+                        performance: {
+                            class: undefined
                         }
                     },
                     proposition: {
-                        raw: [],
-                        calculated: {
-                            adjusted: undefined,
+                        score: {
+                            values: [],
+                            sum: undefined,
+                            average: undefined
+                        },
+                        point: {
+                            values: [],
+                            sum: undefined,
                             average: undefined
                         }
                     },
                     opposition: {
-                        raw: [],
-                        calculated: {
-                            adjusted: undefined,
+                        score: {
+                            values: [],
+                            sum: undefined,
+                            average: undefined
+                        },
+                        point: {
+                            values: [],
+                            sum: undefined,
                             average: undefined
                         }
                     }
@@ -58,100 +69,178 @@ var creators = {
     }
 };
 
-var computations = {
-    resolver: {
-        for: function(style) {
-            return {
-                'Australasia': computations.events.to.members.australasia,
-                'British Parliamentary': computations.events.to.members.bp
-            }[style];
+var mappers = {
+    event: {
+        to: {
+            teams: {
+                mapper: {
+                    for: function(style) {
+                        return {
+                            'Australasia': mappers.event.to.teams.australasia,
+                            'British Parliamentary': mappers.event.to.teams.bp
+                        }[style];
+                    }
+                },
+                australasia: {
+                    map: function(event) {
+                        return [event.teams.proposition, event.teams.opposition];
+                    }
+                },
+                bp: {
+                    map: function(event) {
+                        return [event.teams.proposition.opening, event.teams.proposition.closing,
+                            event.teams.opposition.opening, event.teams.opposition.closing];
+                    }
+                }
+            }
+        }
+    }
+};
+
+var preparators = {
+    events: {
+        points: {
+            prepare: function(events) {
+                _.each(events, function (e) {
+                    preparators.event.points.prepare(e);
+                });
+            }
         }
     },
+    event: {
+        points: {
+            prepare: function(event) {
+                var teams = mappers.event.to.teams.mapper.for(event.style).map(event);
+
+                var max = _.maxBy(teams, function(t) {
+                    return t.score;
+                }).score;
+
+                var winners = _.filter(teams, function(t) {
+                    return t.score === max;
+                });
+                var point = constants.points.win;
+                if (winners.length > 1) {
+                    point = constants.points.draw;
+                }
+                _.each(winners, function(w) {
+                    w.point = point;
+                });
+
+                var losers = _.filter(teams, function(t) {
+                    return t.score < max;
+                });
+                _.each(losers, function(l) {
+                    l.point = constants.points.lose;
+                });
+
+                return event;
+            }
+        }
+    }
+};
+
+var computations = {
     events: {
         to: {
             members: {
+                resolver: {
+                    for: function(style) {
+                        return {
+                            'Australasia': computations.events.to.members.australasia,
+                            'British Parliamentary': computations.events.to.members.bp
+                        }[style];
+                    }
+                },
                 compute: function(events) {
                     var members = {};
 
                     _.each(events, function(e) {
-                        computations.resolver.for(e.style).compute(members, e);
+                        computations.events.to.members.resolver.for(e.style).compute(members, e);
                     });
 
                     _.each(members, function(m) {
-                        m.score.total.calculated.adjusted = _.sum(m.score.total.raw);
-                        m.score.total.calculated.average = m.score.total.calculated.adjusted / m.score.total.raw.length;
+                        m.rank.total.score.sum = _.sum(m.rank.total.score.values);
+                        m.rank.total.score.average = m.rank.total.score.sum / m.rank.total.score.values.length;
+                        m.rank.total.point.sum = _.sum(m.rank.total.point.values);
+                        m.rank.total.point.average = m.rank.total.point.sum / m.rank.total.point.values.length;
 
-                        m.score.proposition.calculated.adjusted = _.sum(m.score.proposition.raw);
-                        m.score.proposition.calculated.average = m.score.proposition.calculated.adjusted / m.score.proposition.raw.length;
+                        m.rank.proposition.score.sum = _.sum(m.rank.proposition.score.values);
+                        m.rank.proposition.score.average = m.rank.proposition.score.sum / m.rank.proposition.score.values.length;
+                        m.rank.proposition.point.sum = _.sum(m.rank.proposition.point.values);
+                        m.rank.proposition.point.average = m.rank.proposition.point.sum / m.rank.proposition.point.values.length;
 
-                        m.score.opposition.calculated.adjusted = _.sum(m.score.opposition.raw);
-                        m.score.opposition.calculated.average = m.score.opposition.calculated.adjusted / m.score.opposition.raw.length;
+                        m.rank.opposition.score.sum = _.sum(m.rank.opposition.score.values);
+                        m.rank.opposition.score.average = m.rank.opposition.score.sum / m.rank.opposition.score.values.length;
+                        m.rank.opposition.point.sum = _.sum(m.rank.opposition.point.values);
+                        m.rank.opposition.point.average = m.rank.opposition.point.sum / m.rank.opposition.point.values.length;
                     });
 
                     return members;
                 },
                 australasia: {
                     compute: function(members, event) {
-                        var average = (event.teams.proposition.score + event.teams.opposition.score) / 2;
-
                         _.each(event.teams.proposition.members, function(m) {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = computations.score.adjust(event.teams.proposition.score / average);
-                            members[m].score.total.raw.push(adjusted);
-                            members[m].score.proposition.raw.push(adjusted);
+                            members[m].rank.total.score.values.push(event.teams.proposition.score);
+                            members[m].rank.total.point.values.push(event.teams.proposition.point);
+                            members[m].rank.proposition.score.values.push(event.teams.proposition.score);
+                            members[m].rank.proposition.point.values.push(event.teams.proposition.point);
                         });
 
                         _.each(event.teams.opposition.members, function(m) {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = computations.score.adjust(event.teams.opposition.score / average);
-                            members[m].score.total.raw.push(adjusted);
-                            members[m].score.opposition.raw.push(adjusted);
+                            members[m].rank.total.score.values.push(event.teams.opposition.score);
+                            members[m].rank.total.point.values.push(event.teams.opposition.point);
+                            members[m].rank.opposition.score.values.push(event.teams.opposition.score);
+                            members[m].rank.opposition.point.values.push(event.teams.opposition.point);
                         });
                     }
                 },
                 bp: {
                     compute: function(members, event) {
-                        var average = (event.teams.proposition.opening.score + event.teams.proposition.closing.score
-                            + event.teams.opposition.opening.score + event.teams.opposition.closing.score) / 4;
-
                         _.each(event.teams.proposition.opening.members, function(m) {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = computations.score.adjust(event.teams.proposition.opening.score / average);
-                            members[m].score.total.raw.push(adjusted);
-                            members[m].score.proposition.raw.push(adjusted);
+                            members[m].rank.total.score.values.push(event.teams.proposition.opening.score);
+                            members[m].rank.total.point.values.push(event.teams.proposition.opening.point);
+                            members[m].rank.proposition.score.values.push(event.teams.proposition.opening.score);
+                            members[m].rank.proposition.point.values.push(event.teams.proposition.opening.point);
                         });
 
                         _.each(event.teams.proposition.closing.members, function(m) {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = computations.score.adjust(event.teams.proposition.closing.score / average);
-                            members[m].score.total.raw.push(adjusted);
-                            members[m].score.proposition.raw.push(adjusted);
+                            members[m].rank.total.score.values.push(event.teams.proposition.closing.score);
+                            members[m].rank.total.point.values.push(event.teams.proposition.closing.point);
+                            members[m].rank.proposition.score.values.push(event.teams.proposition.closing.score);
+                            members[m].rank.proposition.point.values.push(event.teams.proposition.closing.point);
                         });
 
                         _.each(event.teams.opposition.opening.members, function(m) {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = computations.score.adjust(event.teams.opposition.opening.score / average);
-                            members[m].score.total.raw.push(adjusted);
-                            members[m].score.opposition.raw.push(adjusted);
+                            members[m].rank.total.score.values.push(event.teams.opposition.opening.score);
+                            members[m].rank.total.point.values.push(event.teams.opposition.opening.point);
+                            members[m].rank.opposition.score.values.push(event.teams.opposition.opening.score);
+                            members[m].rank.opposition.point.values.push(event.teams.opposition.opening.point);
                         });
 
                         _.each(event.teams.opposition.closing.members, function(m) {
                             members[m] = creators.member.getOrCreate(members[m]);
                             members[m].name = m;
 
-                            var adjusted = computations.score.adjust(event.teams.opposition.closing.score / average);
-                            members[m].score.total.raw.push(adjusted);
-                            members[m].score.opposition.raw.push(adjusted);
+                            members[m].rank.total.score.values.push(event.teams.opposition.closing.score);
+                            members[m].rank.total.point.values.push(event.teams.opposition.closing.point);
+                            members[m].rank.opposition.score.values.push(event.teams.opposition.closing.score);
+                            members[m].rank.opposition.point.values.push(event.teams.opposition.closing.point);
                         });
                     }
                 }
@@ -173,21 +262,6 @@ var computations = {
             }
 
             return 'minus';
-        }
-    },
-    score: {
-        adjust: function(value) {
-            // TODO Not sure that we need it ...
-
-            // if (value > 1.1) {
-            //     return 1.1;
-            // }
-            //
-            // if (value < 0.9) {
-            //     return 0.9
-            // }
-
-            return value;
         }
     }
 };

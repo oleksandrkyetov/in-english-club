@@ -4,20 +4,28 @@
         padding: 0 0 0 0;
     }
 
+    .ranking-header {
+        padding: 0.4em 0 0.4em 0;
+    }
+
+    .ranking-row {
+        padding: 0.4em 0 0.4em 0;
+    }
+
     .ranking-row-name {
         width: 40%;
     }
 
-    .ranking-row-score-total-average, .ranking-row-score-proposition-average, .ranking-row-score-opposition-average {
+    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
         width: 20%;
     }
 
-    .ranking-row-score-total-adjusted, .ranking-row-score-proposition-adjusted, .ranking-row-score-opposition-adjusted {
+    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
         width: 10%;
         display: none;
     }
 
-    .ranking-row-score-total-count, .ranking-row-score-proposition-count, .ranking-row-score-opposition-count {
+    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
         width: 10%;
         display: none;
     }
@@ -29,20 +37,28 @@
         padding: 0 5% 0 5%;
     }
 
+    .ranking-header {
+        padding: 0.6em 0 0.6em 0;
+    }
+
+    .ranking-row {
+        padding: 0.6em 0 0.6em 0;
+    }
+
     .ranking-row-name {
         width: 25%;
     }
 
-    .ranking-row-score-total-average, .ranking-row-score-proposition-average, .ranking-row-score-opposition-average {
+    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
         width: 15%;
     }
 
-    .ranking-row-score-total-adjusted, .ranking-row-score-proposition-adjusted, .ranking-row-score-opposition-adjusted {
+    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
         width: 10%;
         display: none;
     }
 
-    .ranking-row-score-total-count, .ranking-row-score-proposition-count, .ranking-row-score-opposition-count {
+    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
         width: 10%;
     }
 }
@@ -53,19 +69,27 @@
         padding: 0 10% 0 10%;
     }
 
+    .ranking-header {
+        padding: 0.8em 0 0.8em 0;
+    }
+
+    .ranking-row {
+        padding: 0.8em 0 0.8em 0;
+    }
+
     .ranking-row-name {
         width: 25%;
     }
 
-    .ranking-row-score-total-average, .ranking-row-score-proposition-average, .ranking-row-score-opposition-average {
+    .ranking-row-total-average, .ranking-row-proposition-average, .ranking-row-opposition-average {
         width: 10%;
     }
 
-    .ranking-row-score-total-adjusted, .ranking-row-score-proposition-adjusted, .ranking-row-score-opposition-adjusted {
+    .ranking-row-total-adjusted, .ranking-row-proposition-adjusted, .ranking-row-opposition-adjusted {
         width: 10%;
     }
 
-    .ranking-row-score-total-count, .ranking-row-score-proposition-count, .ranking-row-score-opposition-count {
+    .ranking-row-total-count, .ranking-row-proposition-count, .ranking-row-opposition-count {
         width: 5%;
     }
 }
@@ -118,23 +142,15 @@
 }
 
 .ranking-header {
-    padding: 0;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
-    line-height: 2.4em;
     white-space: nowrap;
 }
 
 .ranking-row {
-    padding: 0;
     font-size: 0.8em;
     font-weight: 400;
-    line-height: 2em;
     white-space: nowrap;
-}
-
-.ranking-header, .ranking-row {
-    padding: 0 0.4em 0 0.4em;
 }
 
 .ranking-row-in {
@@ -153,17 +169,17 @@
     padding: 0;
 }
 
-.ranking-row-score-total-average, .ranking-row-score-total-adjusted, .ranking-row-score-total-count {
+.ranking-row-total-average, .ranking-row-total-adjusted, .ranking-row-total-count {
     text-align: center;
     padding: 0;
 }
 
-.ranking-row-score-proposition-average, .ranking-row-score-proposition-adjusted, .ranking-row-score-proposition-count {
+.ranking-row-proposition-average, .ranking-row-proposition-adjusted, .ranking-row-proposition-count {
     text-align: center;
     padding: 0;
 }
 
-.ranking-row-score-opposition-average, .ranking-row-score-opposition-adjusted, .ranking-row-score-opposition-count {
+.ranking-row-opposition-average, .ranking-row-opposition-adjusted, .ranking-row-opposition-count {
     text-align: center;
     padding: 0;
 }
