@@ -58,7 +58,10 @@ $(document).ready(function() {
         });
     });
 
-    $('#ranking').html(Handlebars.compile($('#ranking-template').html())({
+    var html = [];
+    html.push(Handlebars.compile($('#ranking-template').html())({
         ranking: ranking.current
     }));
+
+    $('#ranking').html(html);
 });

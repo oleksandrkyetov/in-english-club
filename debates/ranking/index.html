@@ -51,41 +51,41 @@
         </div>
     </div>
     {{#each ranking.in}}
-        <div class="col-12 ranking-row ranking-row-in">
-            <div class="row">
-                <div class="ranking-row-name">
-                    <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
-                    {{this.name}}
-                </div>
-                <div class="ranking-row-total-average">{{format this.rank.total.point.average 1 '0.00'}}</div>
-                <div class="ranking-row-total-adjusted">{{format this.rank.total.point.sum 1 '0.00'}}</div>
-                <div class="ranking-row-total-count">{{this.rank.total.point.values.length}}</div>
-                <div class="ranking-row-proposition-average">{{format this.rank.proposition.point.average 1 '0.00'}}</div>
-                <div class="ranking-row-proposition-adjusted">{{format this.rank.proposition.point.sum 1 '0.00'}}</div>
-                <div class="ranking-row-proposition-count">{{this.rank.proposition.point.values.length}}</div>
-                <div class="ranking-row-opposition-average">{{format this.rank.opposition.point.average 1 '0.00'}}</div>
-                <div class="ranking-row-opposition-adjusted">{{format this.rank.opposition.point.sum 1 '0.00'}}</div>
-                <div class="ranking-row-opposition-count">{{this.rank.opposition.point.values.length}}</div>
+    <div class="col-12 ranking-row ranking-row-in">
+        <div class="row">
+            <div class="ranking-row-name">
+                <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
+                {{this.name}}
             </div>
+            <div class="ranking-row-total-average">{{format this.rank.total.point.average 1 '0.00'}}</div>
+            <div class="ranking-row-total-adjusted">{{format this.rank.total.point.sum 1 '0.00'}}</div>
+            <div class="ranking-row-total-count">{{this.rank.total.point.values.length}}</div>
+            <div class="ranking-row-proposition-average">{{format this.rank.proposition.point.average 1 '0.00'}}</div>
+            <div class="ranking-row-proposition-adjusted">{{format this.rank.proposition.point.sum 1 '0.00'}}</div>
+            <div class="ranking-row-proposition-count">{{this.rank.proposition.point.values.length}}</div>
+            <div class="ranking-row-opposition-average">{{format this.rank.opposition.point.average 1 '0.00'}}</div>
+            <div class="ranking-row-opposition-adjusted">{{format this.rank.opposition.point.sum 1 '0.00'}}</div>
+            <div class="ranking-row-opposition-count">{{this.rank.opposition.point.values.length}}</div>
         </div>
+    </div>
     {{/each}}
     {{#each ranking.out}}
-        <div class="col-12 ranking-row ranking-row-out">
-            <div class="row">
-                <div class="ranking-row-name">
-                    <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
-                    {{this.name}}
-                </div>
-                <div class="ranking-row-total-average">{{format this.rank.total.point.average 1 '0.00'}}</div>
-                <div class="ranking-row-total-adjusted">{{format this.rank.total.point.sum 1 '0.00'}}</div>
-                <div class="ranking-row-total-count">{{this.rank.total.point.values.length}}</div>
-                <div class="ranking-row-proposition-average">{{format this.rank.proposition.point.average 1 '0.00'}}</div>
-                <div class="ranking-row-proposition-adjusted">{{format this.rank.proposition.point.sum 1 '0.00'}}</div>
-                <div class="ranking-row-proposition-count">{{this.rank.proposition.point.values.length}}</div>
-                <div class="ranking-row-opposition-average">{{format this.rank.opposition.point.average 1 '0.00'}}</div>
-                <div class="ranking-row-opposition-adjusted">{{format this.rank.opposition.point.sum 1 '0.00'}}</div>
-                <div class="ranking-row-opposition-count">{{this.rank.opposition.point.values.length}}</div>
+    <div class="col-12 ranking-row ranking-row-out">
+        <div class="row">
+            <div class="ranking-row-name">
+                <i class="ranking-row-performance fa fa-{{this.rank.total.performance.class}}"></i>
+                {{this.name}}
             </div>
+            <div class="ranking-row-total-average">{{format this.rank.total.point.average 1 '0.00'}}</div>
+            <div class="ranking-row-total-adjusted">{{format this.rank.total.point.sum 1 '0.00'}}</div>
+            <div class="ranking-row-total-count">{{this.rank.total.point.values.length}}</div>
+            <div class="ranking-row-proposition-average">{{format this.rank.proposition.point.average 1 '0.00'}}</div>
+            <div class="ranking-row-proposition-adjusted">{{format this.rank.proposition.point.sum 1 '0.00'}}</div>
+            <div class="ranking-row-proposition-count">{{this.rank.proposition.point.values.length}}</div>
+            <div class="ranking-row-opposition-average">{{format this.rank.opposition.point.average 1 '0.00'}}</div>
+            <div class="ranking-row-opposition-adjusted">{{format this.rank.opposition.point.sum 1 '0.00'}}</div>
+            <div class="ranking-row-opposition-count">{{this.rank.opposition.point.values.length}}</div>
         </div>
+    </div>
     {{/each}}
 </script>

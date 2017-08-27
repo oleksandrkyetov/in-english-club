@@ -4,17 +4,17 @@ var events = [
     {
         date: '2017-02-18',
         style: 'British Parliamentary',
-        topic: 'This House claims that home education is better than ordinary school education',
+        topic: 'This House claims\nthat home education\nis better than ordinary\nschool education',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 16,
                     point: undefined,
                     members: ['Josefina Herrera', 'Hannah Hubbard']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 17,
                     point: undefined,
                     members: ['Enrique Houston', 'Krista Poole']
@@ -22,13 +22,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 18,
                     point: undefined,
                     members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 17,
                     point: undefined,
                     members: ['Cory Salazar', 'April Aguilar']
@@ -58,17 +58,17 @@ var events = [
     {
         date: '2017-03-04',
         style: 'British Parliamentary',
-        topic: 'This House believes that tipping should be discouraged',
+        topic: 'This House believes\nthat tipping should\nbe discouraged',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 21,
                     point: undefined,
                     members: ['Josefina Herrera', 'Ramon Willis']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 18,
                     point: undefined,
                     members: ['Jeannie Brown', 'Benjamin Wheeler']
@@ -76,13 +76,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 19,
                     point: undefined,
                     members: ['Cory Salazar', 'Enrique Houston']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 23,
                     point: undefined,
                     members: ['Sharon Terry', 'Tommy Welch']
@@ -93,7 +93,7 @@ var events = [
     {
         date: '2017-03-11',
         style: 'Australasia',
-        topic: 'This House believes that prostitution should be legalised',
+        topic: 'This House believes\nthat prostitution should\nbe legalised',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -112,17 +112,17 @@ var events = [
     {
         date: '2017-03-18',
         style: 'British Parliamentary',
-        topic: 'This House believes that money defines success',
+        topic: 'This House\nbelieves that money\ndefines success',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 22,
                     point: undefined,
                     members: ['Ramon Willis', 'Tommy Welch']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 24,
                     point: undefined,
                     members: ['Jeannie Brown', 'Austin Bates']
@@ -130,13 +130,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 16,
                     point: undefined,
                     members: ['Enrique Houston', 'Ramona Moss']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 21,
                     point: undefined,
                     members: ['Josefina Herrera', 'Lorene Moody']
@@ -147,7 +147,7 @@ var events = [
     {
         date: '2017-03-25',
         style: 'Australasia',
-        topic: 'This House claims that being a woman is more expensive',
+        topic: 'This House claims\nthat being a woman\nis more expensive',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -166,17 +166,17 @@ var events = [
     {
         date: '2017-04-01',
         style: 'British Parliamentary',
-        topic: 'This House believes that April Fools Day is the worst holiday ever',
+        topic: 'This House believes\nthat April Fools Day is\nthe worst holiday ever',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 24,
                     point: undefined,
                     members: ['Cory Salazar', 'Genevieve Simon']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 18,
                     point: undefined,
                     members: ['Austin Bates', 'Jeannie Brown']
@@ -184,13 +184,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 22,
                     point: undefined,
                     members: ['Enrique Houston', 'Tommy Welch']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 22,
                     point: undefined,
                     members: ['Ramona Moss', 'Sharon Terry']
@@ -201,7 +201,7 @@ var events = [
     {
         date: '2017-04-08',
         style: 'Australasia',
-        topic: 'This House believes that men and women can be just friends',
+        topic: 'This House believes\nthat men and women\ncan be just friends',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -220,17 +220,17 @@ var events = [
     {
         date: '2017-04-15',
         style: 'British Parliamentary',
-        topic: 'This House believes that we have to bring democracy to such totalitarian countries like North Korea',
+        topic: 'This House believes\nthat we need to bring\ndemocracy to such\ntotalitarian countries\nlike North Korea',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 35,
                     point: undefined,
                     members: ['Tommy Welch', 'Jeannie Brown']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 25,
                     point: undefined,
                     members: ['Krista Poole', 'Hannah Hubbard']
@@ -238,13 +238,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 33,
                     point: undefined,
                     members: ['Enrique Houston', 'Josefina Herrera']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 38,
                     point: undefined,
                     members: ['Cory Salazar', 'Benjamin Wheeler']
@@ -255,7 +255,7 @@ var events = [
     {
         date: '2017-04-22',
         style: 'Australasia',
-        topic: 'This House believes that marriage is an outdated institution',
+        topic: 'This House believes\nthat marriage is an\noutdated institution',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -274,7 +274,7 @@ var events = [
     {
         date: '2017-04-29',
         style: 'Australasia',
-        topic: 'This House believes that humanity has to stop further development of artificial intelligence',
+        topic: 'This House believes\nthat humanity has to stop\nfurther development of\nartificial intelligence',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -293,7 +293,7 @@ var events = [
     {
         date: '2017-05-06',
         style: 'Australasia',
-        topic: 'This House believes that a person can force another individual to change',
+        topic: 'This House believes\nthat a person can force\nanother individual to change',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -312,7 +312,7 @@ var events = [
     {
         date: '2017-05-27',
         style: 'Australasia',
-        topic: 'This House claims that nowadays childhood is not as nice as it used to be',
+        topic: 'This House claims\nthat nowadays childhood\nis not as nice as it\nused to be',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -331,7 +331,7 @@ var events = [
     {
         date: '2017-06-03',
         style: 'Australasia',
-        topic: 'This House claims that working remotely is better than working in the office',
+        topic: 'This House claims\nthat working remotely\nis better than working\nin the office',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -350,7 +350,7 @@ var events = [
     {
         date: '2017-06-24',
         style: 'Australasia',
-        topic: 'This House believes that life with children is much better',
+        topic: 'This House believes\nthat life with children\nis much better',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -369,7 +369,7 @@ var events = [
     {
         date: '2017-07-08',
         style: 'Australasia',
-        topic: 'This House claims that being single is better than being in a relationship',
+        topic: 'This House claims\nthat being single\nis better than being\nin a relationship',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -388,7 +388,7 @@ var events = [
     {
         date: '2017-07-15',
         style: 'Australasia',
-        topic: 'This House claims that we need to maintain local traditions instead of accepting global culture',
+        topic: 'This House claims\nthat we need to maintain\nlocal traditions instead of\naccepting global culture',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -407,17 +407,17 @@ var events = [
     {
         date: '2017-07-22',
         style: 'British Parliamentary',
-        topic: 'This House believes that online self-education is better than traditional university degree',
+        topic: 'This House believes\nthat online self-education\nis better than traditional\nuniversity degree',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 22,
                     point: undefined,
                     members: ['Conrad Norman', 'Ellis Kelly']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 26,
                     point: undefined,
                     members: ['Enrique Houston', 'Juan Holmes']
@@ -425,13 +425,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 29,
                     point: undefined,
                     members: ['April Aguilar', 'Cory Salazar']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 27,
                     point: undefined,
                     members: ['Tommy Welch', 'Claudia Frazier']
@@ -442,7 +442,7 @@ var events = [
     {
         date: '2017-07-29',
         style: 'Australasia',
-        topic: 'This House claims that living in the city is much better than outside the city',
+        topic: 'This House claims\nthat living in the city\nis much better than\noutside the city',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -461,17 +461,17 @@ var events = [
     {
         date: '2017-08-05',
         style: 'British Parliamentary',
-        topic: 'This House believes that voluntary euthanasia should be legalized',
+        topic: 'This House believes\nthat voluntary euthanasia\nshould be legalized',
         teams: {
             proposition: {
                 opening: {
-                    name: 'Opening Proposition',
+                    name: 'Opening\nProposition',
                     score: 11,
                     point: undefined,
                     members: ['April Aguilar', 'Pearl May']
                 },
                 closing: {
-                    name: 'Closing Proposition',
+                    name: 'Closing\nProposition',
                     score: 18,
                     point: undefined,
                     members: ['Ramon Willis', 'Sheryl Jimenez']
@@ -479,13 +479,13 @@ var events = [
             },
             opposition: {
                 opening: {
-                    name: 'Opening Opposition',
+                    name: 'Opening\nOpposition',
                     score: 24,
                     point: undefined,
                     members: ['Jeannie Brown', 'Enrique Houston']
                 },
                 closing: {
-                    name: 'Closing Opposition',
+                    name: 'Closing\nOpposition',
                     score: 30,
                     point: undefined,
                     members: ['Tommy Welch', 'Josefina Herrera']
@@ -496,7 +496,7 @@ var events = [
     {
         date: '2017-08-12',
         style: 'Australasia',
-        topic: 'This House believes that humanity needs to stop exploration of the universe',
+        topic: 'This House believes\nthat humanity needs\nto stop exploration\nof the universe',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -515,7 +515,7 @@ var events = [
     {
         date: '2017-08-19',
         style: 'Australasia',
-        topic: 'This House believes that diversity at comapnies should be maintained at any cost',
+        topic: 'This House believes that\ndiversity at companies\nshould be maintained\nat any cost',
         teams: {
             proposition: {
                 name: 'Proposition',
@@ -534,7 +534,7 @@ var events = [
     {
         date: '2017-08-26',
         style: 'Australasia',
-        topic: 'This House believes that romantic relationships at work should be prohibited',
+        topic: 'This House believes that\nromantic relationships\nat work should be\nprohibited',
         teams: {
             proposition: {
                 name: 'Proposition',
