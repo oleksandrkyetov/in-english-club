@@ -160,7 +160,7 @@ var mappings = [
         name: 'Sergey Kondratyuk',
         facebook: 'https://www.facebook.com/sergey.kondratyuk.98',
         aliases: {
-            debates: 'Ellis Kelly'
+            debates: 'Paul Barton'
         }
     },
     {
@@ -245,6 +245,20 @@ var mappings = [
         facebook: 'https://www.facebook.com/profile.php?id=100006877245919',
         aliases: {
             debates: 'Katrina Phillips'
+        }
+    },
+    {
+        name: 'Daria Prus',
+        facebook: undefined,
+        aliases: {
+            debates: 'Della Ferguson'
+        }
+    },
+    {
+        name: 'Vasil Prus',
+        facebook: undefined,
+        aliases: {
+            debates: 'Bryant Allen'
         }
     }
 ];

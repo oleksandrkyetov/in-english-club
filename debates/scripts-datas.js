@@ -356,7 +356,7 @@ var events = [
                 name: 'Proposition',
                 score: 30,
                 point: undefined,
-                members: ['Russell Fields', 'Ellis Kelly', 'Benjamin Wheeler']
+                members: ['Russell Fields', 'Paul Barton', 'Benjamin Wheeler']
             },
             opposition: {
                 name: 'Opposition',
@@ -381,7 +381,7 @@ var events = [
                 name: 'Opposition',
                 score: 49,
                 point: undefined,
-                members: ['Jeannie Brown', 'Krista Poole', 'Ellis Kelly']
+                members: ['Jeannie Brown', 'Krista Poole', 'Paul Barton']
             }
         }
     },
@@ -394,7 +394,7 @@ var events = [
                 name: 'Proposition',
                 score: 42,
                 point: undefined,
-                members: ['Benjamin Wheeler', 'Hannah Hubbard', 'Ellis Kelly']
+                members: ['Benjamin Wheeler', 'Hannah Hubbard', 'Paul Barton']
             },
             opposition: {
                 name: 'Opposition',
@@ -414,7 +414,7 @@ var events = [
                     name: 'Opening\nProposition',
                     score: 22,
                     point: undefined,
-                    members: ['Conrad Norman', 'Ellis Kelly']
+                    members: ['Conrad Norman', 'Paul Barton']
                 },
                 closing: {
                     name: 'Closing\nProposition',
@@ -454,7 +454,7 @@ var events = [
                 name: 'Opposition',
                 score: 31,
                 point: undefined,
-                members: ['Ellis Kelly', 'Enrique Houston', 'Sheryl Jimenez']
+                members: ['Paul Barton', 'Enrique Houston', 'Sheryl Jimenez']
             }
         }
     },
@@ -502,7 +502,7 @@ var events = [
                 name: 'Proposition',
                 score: 24,
                 point: undefined,
-                members: ['Enrique Houston', 'Justin Ford', 'Ellis Kelly']
+                members: ['Enrique Houston', 'Justin Ford', 'Paul Barton']
             },
             opposition: {
                 name: 'Opposition',
@@ -521,7 +521,7 @@ var events = [
                 name: 'Proposition',
                 score: 18,
                 point: undefined,
-                members: ['Ellis Kelly', 'James Doe', 'John Doe']
+                members: ['Paul Barton', 'James Doe', 'John Doe']
             },
             opposition: {
                 name: 'Opposition',
@@ -547,6 +547,41 @@ var events = [
                 score: 23,
                 point: undefined,
                 members: ['Conrad Norman', 'Enrique Houston', 'Justin Ford']
+            }
+        }
+    },
+    {
+        date: '2017-09-02',
+        style: 'British Parliamentary',
+        topic: 'This House would\nban animal testing',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening\nProposition',
+                    score: 18,
+                    point: undefined,
+                    members: ['Josefina Herrera', 'Enrique Houston']
+                },
+                closing: {
+                    name: 'Closing\nProposition',
+                    score: 16,
+                    point: undefined,
+                    members: ['Ramon Willis', 'Della Ferguson']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening\nOpposition',
+                    score: 19,
+                    point: undefined,
+                    members: ['Cory Salazar', 'Bryant Allen']
+                },
+                closing: {
+                    name: 'Closing\nOpposition',
+                    score: 20,
+                    point: undefined,
+                    members: ['Jeannie Brown', 'Paul Barton']
+                }
             }
         }
     }
