@@ -661,7 +661,7 @@ var events = [
     {
         date: '2017-09-30',
         style: 'Australasia',
-        topic: 'This House believes that\ntech companies like Uber and Airbnb\nshould be banned as they hurt\neconomy of the cities',
+        topic: 'This House believes that\ntech companies like Uber\nshould be banned as they hurt\neconomy of the cities',
         teams: {
             proposition: {
                 name: 'Proposition',
