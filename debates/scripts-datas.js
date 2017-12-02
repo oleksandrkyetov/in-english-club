@@ -584,5 +584,246 @@ var events = [
                 }
             }
         }
+    },
+    {
+        date: '2017-09-09',
+        style: 'British Parliamentary',
+        topic: 'This House believes\nthat fashion is hurting\nthe society',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening\nProposition',
+                    score: 24,
+                    point: undefined,
+                    members: ['Ramon Willis', 'Benjamin Wheeler']
+                },
+                closing: {
+                    name: 'Closing\nProposition',
+                    score: 18,
+                    point: undefined,
+                    members: ['Hannah Hubbard', 'Enrique Houston']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening\nOpposition',
+                    score: 25,
+                    point: undefined,
+                    members: ['Krista Poole', 'Josefina Herrera']
+                },
+                closing: {
+                    name: 'Closing\nOpposition',
+                    score: 22,
+                    point: undefined,
+                    members: ['Paul Barton', 'Kelly Marshall']
+                }
+            }
+        }
+    },
+    {
+        date: '2017-09-16',
+        style: 'Australasia',
+        topic: 'This House believes\nthat capital punishment\nshould be allowed',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 23,
+                point: undefined,
+                members: ['Clay Mccarthy', 'Helen Reese', 'Kelly Marshall']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 26,
+                point: undefined,
+                members: ['Tommy Welch', 'Enrique Houston', 'Loren Quinn']
+            }
+        }
+    },
+    {
+        date: '2017-09-23',
+        style: 'Australasia',
+        topic: 'This House believes\nthat world would have been\nbetter without borders',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 31,
+                point: undefined,
+                members: ['Conrad Norman', 'Clay Mccarthy', 'Ramon Willis']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 28,
+                point: undefined,
+                members: ['Enrique Houston', 'Jeannie Brown', 'Lindsey Ray']
+            }
+        }
+    },
+    {
+        date: '2017-09-30',
+        style: 'Australasia',
+        topic: 'This House believes that\ntech companies like Uber and Airbnb\nshould be banned as they hurt\neconomy of the cities',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 34,
+                point: undefined,
+                members: ['Conrad Norman', 'Benjamin Wheeler', 'Kelly Marshall']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 31,
+                point: undefined,
+                members: ['Clay Mccarthy', 'Enrique Houston', 'Paul Barton']
+            }
+        }
+    },
+    {
+        date: '2017-10-07',
+        style: 'British Parliamentary',
+        topic: 'This House believes\nthat cryptocurrencies are\na viable replacement for the\nconventional currencies',
+        teams: {
+            proposition: {
+                opening: {
+                    name: 'Opening\nProposition',
+                    score: 15,
+                    point: undefined,
+                    members: ['Enrique Houston', 'John Doe']
+                },
+                closing: {
+                    name: 'Closing\nProposition',
+                    score: 19,
+                    point: undefined,
+                    members: ['Ramon Willis', 'Helen Reese']
+                }
+            },
+            opposition: {
+                opening: {
+                    name: 'Opening\nOpposition',
+                    score: 26,
+                    point: undefined,
+                    members: ['Cory Salazar', 'Tommy Welch']
+                },
+                closing: {
+                    name: 'Closing\nOpposition',
+                    score: 19,
+                    point: undefined,
+                    members: ['Julia Casey', 'Paul Barton']
+                }
+            }
+        }
+    },
+    {
+        date: '2017-10-14',
+        style: 'Australasia',
+        topic: 'This House claims that\nevery ethnic group deserves\nits own nation-state',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 29,
+                point: undefined,
+                members: ['Cory Salazar', 'Enrique Houston', 'John Doe']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 36,
+                point: undefined,
+                members: ['Jeannie Brown', 'Benjamin Wheeler', 'Maurice Castro']
+            }
+        }
+    },
+    {
+        date: '2017-10-21',
+        style: 'Australasia',
+        topic: 'This House would\npromote the gender-neutral\nway to raise children',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 61,
+                point: undefined,
+                members: ['Maurice Castro', 'Sharon Terry', 'Benjamin Wheeler']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 59,
+                point: undefined,
+                members: ['Ramon Willis', 'Enrique Houston', 'Anthony Chandler']
+            }
+        }
+    },
+    {
+        date: '2017-10-28',
+        style: 'Australasia',
+        topic: 'This House believes\nthat sexual harassment\nis inevitable',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 30,
+                point: undefined,
+                members: ['Ramon Willis', 'Lula Pittman', 'Julia Casey']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 30,
+                point: undefined,
+                members: ['Paul Barton', 'Enrique Houston', 'Jeannie Brown']
+            }
+        }
+    },
+    {
+        date: '2017-11-04',
+        style: 'Australasia',
+        topic: 'This House believes that\nartificially intelligent robots\nshould have the same rights\nas humans',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 18,
+                point: undefined,
+                members: ['Enrique Houston', 'Benjamin Wheeler', 'John Doe']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 2,
+                point: undefined,
+                members: ['Justin Ford', 'Ramon Willis', 'Jane Doe']
+            }
+        }
+    },
+    {
+        date: '2017-11-11',
+        style: 'Australasia',
+        topic: 'This House believes that\nSocial Credit System is the way\nto a trustworthy nation',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 35,
+                point: undefined,
+                members: ['Helen Reese', 'Enrique Houston', 'Conrad Norman']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 39,
+                point: undefined,
+                members: ['Jeannie Brown', 'Sharon Terry', 'Benjamin Wheeler']
+            }
+        }
+    },
+    {
+        date: '2017-11-18',
+        style: 'Australasia',
+        topic: 'This House believes\nthat renting is better\nthan buying',
+        teams: {
+            proposition: {
+                name: 'Proposition',
+                score: 34,
+                point: undefined,
+                members: ['Josefina Herrera', 'Benjamin Wheeler', 'Sharon Fitzgerald']
+            },
+            opposition: {
+                name: 'Opposition',
+                score: 28,
+                point: undefined,
+                members: ['Cory Salazar', 'Enrique Houston', 'John Doe']
+            }
+        }
     }
 ];

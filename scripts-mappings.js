@@ -260,5 +260,61 @@ var mappings = [
         aliases: {
             debates: 'Bryant Allen'
         }
+    },
+    {
+        name: 'Nadya Yaremchuk',
+        facebook: 'https://www.facebook.com/profile.php?id=100004017703177',
+        aliases: {
+            debates: 'Kelly Marshall'
+        }
+    },
+    {
+        name: 'Andriy Shyrochenkov',
+        facebook: 'https://www.facebook.com/ashaoshan',
+        aliases: {
+            debates: 'Clay Mccarthy'
+        }
+    },
+    {
+        name: 'Olga Kabachok',
+        facebook: 'https://www.facebook.com/olga.kabachok',
+        aliases: {
+            debates: 'Helen Reese'
+        }
+    },
+    {
+        name: 'Liubov Makarenko',
+        facebook: 'https://www.facebook.com/makarenkoliubov',
+        aliases: {
+            debates: 'Loren Quinn'
+        }
+    },
+    {
+        name: 'Yulia Shevchenko',
+        facebook: 'https://www.facebook.com/shevchenko.yu',
+        aliases: {
+            debates: 'Lindsey Ray'
+        }
+    },
+    {
+        name: 'Christina Martsynkovska',
+        facebook: 'https://www.facebook.com/christina.martsynkovska',
+        aliases: {
+            debates: 'Julia Casey'
+        }
+    },
+    {
+        name: 'Dmitriy Blinov',
+        facebook: 'https://www.facebook.com/dmitriy.blinov.14',
+        aliases: {
+            debates: 'Anthony Chandler'
+        }
+    },
+    {
+        name: 'Nataliia Ievtushenko',
+        facebook: 'https://www.facebook.com/natalyia.evtushenko',
+        aliases: {
+            debates: 'Lula Pittman'
+        }
     }
 ];
